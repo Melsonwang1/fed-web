@@ -1,6 +1,6 @@
 # FED Assignment 2 (Melson and Zheng Bin) #
 ## Covid website ##
-The website that we have created is a Covid website that aims to educate users on the Covid-19 pandemic so that they know how to protect themselves and their loved ones from the virus. Additionally, if they are planning to travel, they can check the number of Covid-19 cases in that country that they are planning to travel to. This will help them make the decision weather to go to that country. There would also be global news on the Covid situation of the world.
+The website that we have created is a Covid website that aims to educate users on the Covid-19 pandemic so that they know how to protect themselves and their loved ones from the virus. Additionally, if they are planning to travel, they can check the number of Covid-19 cases in that country that they are planning to travel to. This will help them make the decision whether to go to that country. There would also be global news on the Covid situation of the world.
 
 ## Design Process ##
 * As a user who plans to travel overseas or travels overseas frequently, I would like a website where I can conveniently check the number of Covid-19 cases for the country that I am travelling to so that I know how good or bad the Covid situation is in that country. This will let me know if the condition of Covid 19 in that country is good or bad and decide whether i should still continue my trip.
