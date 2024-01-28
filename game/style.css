@@ -33,14 +33,9 @@
     position: absolute;
     margin-left: 195px;
 }
-.CarGame{
-    background-image: url(Images/anime.gif);
-    background-size: cover;
-
-}
 .other{
     width: 80px;
-    height: 100px;
+    height: 90px;
     background-color: blue;
     position: absolute;
     bottom: 120px;
