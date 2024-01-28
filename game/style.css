@@ -12,7 +12,7 @@
     background-color: red;
     position: absolute;
     bottom: 120px;
-   background-image: url(CAUTION/CAUTION/Images/amb3.png);
+   background-image: url(Images/amb3.png);
     background-size: cover;
 
 }
@@ -34,7 +34,7 @@
     margin-left: 195px;
 }
 .CarGame{
-    background-image: url(CAUTION/CAUTION/Images/anime.gif);
+    background-image: url(Images/anime.gif);
     background-size: cover;
 
 }
@@ -44,7 +44,7 @@
     background-color: blue;
     position: absolute;
     bottom: 120px;
-     background-image: url(CAUTION/CAUTION/Images/covid.jpg);
+     background-image: url(Images/covid.jpg);
       background-size: cover;
      
     
