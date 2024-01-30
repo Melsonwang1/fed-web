@@ -10,7 +10,7 @@ $(document).ready(function () {
         }
     };
 
-    const APIKEY = "63ddca833bc6b255ed0c4632";
+    const APIKEY = "65b3d51dd6d73200d3daa3cf";
 
     $(".dots").hide(); // hide the lottie
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
         let settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://interactivedev-0fcf.restdb.io/rest/accounts",
+            "url": "https://melson-8855.restdb.io/rest/quiz",
             "method": "GET", // get the data from the database
             "headers": { 
                 "content-type": "application/json",

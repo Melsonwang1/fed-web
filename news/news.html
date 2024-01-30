@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
-
-
+    <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
+
+
+
   <body>
-    <header class="header-closed header-opened">
-      <form id="search-form">
-        </button>
-      </form>
-      <button
-        id="scroll-down"
-        onclick="window.scrollBy({top: 3})"
-      >
-      <img
-          src="https://raw.githubusercontent.com/sepsol/nyt-clone/gh-pages/assets/iconmonstr-arrow-69-32.png"
-          width="35px"
-          height="35px"
-        />
-      </button>
-    </header>
+
+
     <main>
+
+
+      <noscript>
+        <h2
+          style="
+            width: 85vw;
+            height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;">
+        </h2>
+      </noscript>
       <ol id="search-results"></ol>
     </main>
+
+
+
     <footer>
+      <p>&copy; <span id="thisYear"></span> API from New York Times</p>
+      <script>
+        document.getElementById(
+          'thisYear'
+        ).innerHTML = new Date().getFullYear();
+      </script>
     </footer>
 
-    <script src="..//news/nyt-api.js"></script>
+    <script src="nyt-api.js"></script>
   </body>
+
+
 </html>

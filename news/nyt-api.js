@@ -3,7 +3,7 @@ const searchBox = document.getElementById('search-box');
 const searchResults = document.getElementById('search-results');
 
 const url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
-const authKey = 'HL1zkPePcTNLTnPBpcDKBpWZWsAngbnq';
+const authKey = 'Z6Ow8VJvQswJSIc7IvJqx7CGqPhhzKvg';
 const apiKey = `api-key=${authKey}`;
 
 let content = [];
@@ -25,11 +25,12 @@ async function doQuery(queryTerm) {
     author: doc.byline.original,
     section: doc.section_name,
     words: doc.word_count + ' words',
-    readTime: Math.ceil(doc.word_count / 200) + ' min read time',
+    readTime: Math.ceil(doc.word_count / 238) + ' min read time',
     rawDate: new Date(doc.pub_date),
     date: new Date(doc.pub_date).toLocaleDateString('en-US', {
       month: 'long',
-      day: 'numeric'
+      day: 'numeric',
+      year: 'numeric'
     }),
     url: doc.web_url
   }));
@@ -80,19 +81,8 @@ async function doQuery(queryTerm) {
   }
 }
 
-doQuery('covid');
+doQuery('covid', 'coronavirus', 'pandemic', 'virus', 'vaccine');
 
-// USER QUERY
-async function doSearch(e) {
-  e.preventDefault();
-  while (searchResults.firstChild) {
-    searchResults.removeChild(searchResults.firstChild);
-  }
-  await doQuery(searchBox.value);
-  setTimeout(window.scrollTo({ top: 3 }), 300);
-}
-
-searchForm.addEventListener('submit', doSearch);
 
 /* 
 

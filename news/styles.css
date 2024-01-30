@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lilita+One&display=swap');
 
-:root {
-  --color-primary: #cc0000;
-}
-
 h1,
 h2,
 h3,
@@ -57,86 +53,7 @@ header {
 h1 {
   padding: 0.5em 0;
 }
-.header-closed {
-  height: 7vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.header-closed h1 {
-  margin-bottom: 0;
-}
-.header-closed form {
-  visibility: hidden;
-  display: none;
-}
-.header-opened {
-  height: 100vh;
-  font-size: 3em;
-  padding-bottom: 3.8em;
-}
-.header-opened h1 {
-  margin-bottom: 0.8em;
-}
-.header-opened form {
-  visibility: initial;
-  display: initial;
-}
 
-form {
-  width: 8em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 5px #eee solid;
-  padding-bottom: 0.2em;
-}
-input,
-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-input#search-box {
-  width: 8em;
-  height: 100%;
-  font-size: 0.8em;
-  color: #eee;
-}
-input#search-box::placeholder {
-  color: #eee;
-  opacity: 0.7;
-}
-
-form button {
-  width: 2em;
-  height: 100%;
-  cursor: pointer;
-}
-button img {
-  margin: 0;
-}
-
-button#scroll-down {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #eee;
-  cursor: pointer;
-  position: absolute;
-  bottom: 7vh;
-  width: 75px;
-}
-#scroll-down img {
-  padding-top: 0.8em;
-}
-.hide-scroll-btn {
-  /* display: none; */
-  visibility: hidden;
-  /* opacity: 0; */
-}
 
 /* main */
 main a {

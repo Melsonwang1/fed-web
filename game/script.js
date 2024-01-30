@@ -4,7 +4,7 @@ const startscreen = document.querySelector('.StartScreen');
 const gamearea = document.querySelector('.GameArea');
 
 // Player object with initial speed and score
-let player = { speed: 5, score: 0 };
+let player = { speed: 12, score: 0 };
 let highest = 0;
 
 // when the user click start
