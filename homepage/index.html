@@ -1,10 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <!-- Loading Section -->
+    <div class="preloading" id="pre-loading-animation" >
+        <div class="icon-loading">
+            <span class="loading-dot loading-dot-1st"></span>
+            <span class="loading-dot loading-dot-2nd"></span>
+            <span class="loading-dot loading-dot-3rd"></span>
+            <span class="loading-dot loading-dot-4th"></span>
+        </div>
+    </div>
+
+    <!--Navigation Section-->
+    <header>
+        <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class=" navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">Map Cases</a>
+            <a href="#">News</a>
+            <a href="#">Quiz</a>
+            <a href="#">Game</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main" >
+        <div class="cta">
+            <h1>Protect Yourself Against Covid-19</h1>
+            <h3>Keep Clean, Stay Healthy</h3>
+            <a href="#" class="btn">Learn more about Covid-19</a>
+        </div>
+    </section>
+
+    <!-- Prevention Section -->
+    <section class="prevention">
+        <h1 class="heading">How To Reduce The Risk Of Covid-19?</h1>
+        <div class="container">
+            <div class="box">
+                <img src="./images/wearing mask.jpg" alt="Wearing Mask Icon">
+                <h3>Wear A Mask</h3>
+                <p>Do wear a mask if you are feeling unwell, or going to crowded places such as shopping malls or taking the public transport.</p>
+            </div>
+            <div class="box">
+                <img src="./images/social-distancing.png" alt="Social Distancing Icon">
+                <h3>Practice Social Distancing</h3>
+                <p>Keep a distance of at least <b>1 metre</b> apart between one another whenever possible.</p>
+            </div>
+            <div class="box">
+                <img src="./images/social interaction.png" alt="Social Interaction Icon">
+                <h3>Reduce Social Interactions</h3>
+                <p>Try to limit your social interactions outside your home, limit to 2 family household per day.</p>
+            </div>
+            <div class="box">
+                <img src="./images/touching face.png" alt="Touching Face Icon">
+                <h3>Avoid Touching Your Face</h3>
+                <p>Avoid touching your eyes, nose and mouth <b>unnecessarily</b>, especially when your hands are not clean.</p>   
+            </div>
+            <div class="box">
+                <img src="./images/washing hands.png" alt="Washing Hands Icon">
+                <h3>Wash Your Hands Frequently</h3>
+                <p>Washing your hands with either soap or hand sanitizer can be very effective in killings germs, viruses and bacteria</p>
+            </div>
+            <div class="box">
+                <img src="./images/vaccination.png" alt="Vaccination Icon">
+                <h3>Get Vaccinated</h3>
+                <p>Vaccination can help to protect you from <b>severe</b> disease and boost your immnunity against Covid-19! </p>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Symptoms Section -->
+    <section class="symptoms">
+        <h1 class="heading">Symptoms Of Covid-19</h1>
+        <div class="column">
+            <div class="main-image-symptoms">
+                <img src="./images/main-symp-img.png" alt="Unwell Person Icon">
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="./images/cough.png" alt="Cough Icon">
+                    <h3>Cough</h3>
+                </div>
+                <div class="box">
+                  <img src="./images/sore throat.png" alt="Sore Throat Icon">
+                  <h3>Sore Throat</h3>
+               </div>
+               <div class="box">
+                  <img src="./images/cold.png" alt="Cold Icon">
+                  <h3>Cold</h3>
+               </div>
+               <div class="box">
+                  <img src="./images/fever.png" alt="Fever Icon">
+                  <h3>Fever</h3>
+               </div>
+               <div class="box">
+                  <img src="./images/headache.png" alt="Headache Icon">
+                  <h3>Headache</h3>
+               </div>
+               <div class="box">
+                  <img src="./images/vomitting.png" alt="Vomit Icon">
+                  <h3>Vomiting</h3>
+               </div>
+            </div>
+    </section>
+
+    <!-- Precaution Section-->
+    <section class="steps-to-do" >
+        <h1 class="heading">What To Do If You Are Infected With Covid-19?</h1>
+        <div class="column">
+            <div class="container">
+              <h3>You Should:</h3>
+              <div class="box">
+                  <img src="./images/isolation.png" alt="Isolation Icon">
+                  <div class="info">
+                      <h1>Self Isolate for 72 Hours</h1>
+                      <p>You should isolate in a room where there is a toliet if possible. You should stay in your room and minimise interaction with your household members. After 72 hours, do the ART test.
+                        If you tested negative after 72 hours, you may end your isolation.
+                      </p>
+                  </div>
+              </div>
+              <div class="box">
+                  <img src="./images/thermometer.png" alt="">
+                  <div class="info">
+                      <h1>Monitor Your Symptoms</h1>
+                      <p>Check your symptoms regularly, such as fever, cough, difficulty breathing, loss of taste or smell. Do seek medical attention as soon as possible if 
+                        your symptoms worsen over time.
+                      </p>
+                  </div>
+              </div>
+              <div class="box">
+                  <img src="./images/drink water.png" alt="Drinking Water Icon">
+                  <div class="info">
+                      <h1>Stay Hydrated and Rest</h1>
+                      <p>Drink plenty of water and get ample rest to support your recovery. Ensure you get enough sleep and take breaks if you need to support your immune system and fight against the virus.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="container">
+              <h3>You Should <b>NOT</b>:</h3>
+              <div class="box">
+                  <img src="./images/no handshake.png" alt="No Handshake Sign">
+                  <div class="info">
+                      <h1>Have Close Contact With Others</h1>
+                      <p>Avoid any contact with others, such as your family members, friends and others. This will help to reduce and slow down the transmission of Covid-19.</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <img src="./images/personal items.png" alt="Personal Items">
+                  <div class="info">
+                      <h1>Share Personal Household Items</h1>
+                      <p>Avoid sharing any of your personal items with others, including household members, as it can help reduce the spread of germs and viruses, such as COVID-19.
+                        These include eating utensils, towels, cups, etc.
+                      </p>
+                  </div>
+              </div>
+              <div class="box">
+                  <img src="./images/stayhome.png" alt="Stay At Home Icon">
+                  <div class="info">
+                      <h1>Leave Your House</h1>
+                      <p>If you are infected, try not to leave your house to go outside, such as to work, school, shopping malls, hawker centres and any other public places. Be socially responsible and stay at home. You should only leave your home
+                        if you need medical care.
+                      </p>
+                  </div>
+              </div>
+            </div>
+        </div>
+         
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="ft aboutus">
+                <h2>About Us</h2>
+                <p>This website can provide details about Covid-19, and also aims to create awareness in you and have a better understanding
+                    of the virus.</p>
+                <ul class="media-logo">
+                    <li><a href= "#"><i class="fab fa-facebook" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-twitter" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-instagram" style="color: #d41c7e;"></i></i></a></li>
+                    <li><a href= "#"><i class="fab fa-youtube" style="color: #f02828;"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>   
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Map Cases</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="ft contact">
+                <h2>Contact Us</h2>
+                <ul class="contact-info">
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <p><a href="#">+65 6123 4567</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="#">coVidSG@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
     
+    <!-- Button for the user to scroll back to the top -->
+    <button id="back-to-top-btn" onclick="scrollingTOP()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+
 </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
 </html>

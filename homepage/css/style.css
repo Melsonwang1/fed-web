@@ -1,0 +1,601 @@
+
+:root {
+  --blue: #3c6382;
+  --dark-blue: #0a3d62;
+}
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  transition: 0.3s ;
+}
+
+html {
+  font-size: 63%;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 16px 9%;
+  padding-top: 100px;
+}
+
+.heading {
+  text-align: center;
+  color: #3c6382; /* dark blue */
+  font-size: 42px;
+  font-weight: normal;
+  padding: 16px;
+}
+
+#menu {
+  font-size: 3rem;
+  color: var(--blue);
+  cursor: pointer;
+  display: none;
+}
+
+/* Loading Section */
+.preloading {
+  background: url(../images/background-img.jpg);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+}
+
+.preloading .icon-loading .loading-dot {
+  background-color: #0a3d62;
+  border-radius: 50%;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-1st {
+  animation: 1.2s grow ease-in-out infinite 0.1s; 
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-2nd {
+  animation: 1.2s grow ease-in-out infinite 0.16s; 
+  margin: 0 14px;
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-3rd {
+  animation: 1.2s grow ease-in-out infinite 0.22s; 
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-4th {
+  animation: 1.2s grow ease-in-out infinite 0.28s; 
+  margin: 0 14px;
+}
+
+@keyframes grow {
+  0%, 50%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+/* Header Section */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: fixed;
+  padding: 21px; 
+}
+
+header .logo {
+  font-size: 34px;
+  color: #3c6382;
+}
+
+header .navbar a {
+  font-size: 20px;
+  padding: 8px 20px;
+  margin-left: 12px;
+  border-radius: 10px;
+  color: #0a3d62; /* Dark Blue */
+}
+
+header .navbar a:hover {
+  background: #3c6382; /* Blue */
+  color: #fff;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Main Section */
+.main {
+  background: url(../images/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main .cta {
+  text-align: center;
+  padding-top: 31px; /* need for mobile view later */
+}
+
+.main .cta h1 {
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #0a3d62;
+}
+
+.main .cta h3 {
+  font-size: 40px;
+  font-weight: normal;
+  padding-bottom: 20px;
+  color: #3c6382;
+}
+
+.main .cta .btn {
+  display: inline-block;
+  font-size: 17px;
+  padding: 11px 23px;
+  color: #fff;
+  background: #3c6382;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(46, 46, 46, 0.1);
+}
+
+.main .cta .btn:hover { /* hover effect at main */
+  background: #0a3d62;
+}
+
+/* Prevention Section */
+.prevention .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.prevention .container .box {
+  text-align: center;
+  border-radius: 10px;
+  margin: 16px;
+  flex: 1 1 28rem;
+  padding: 10px;
+}
+
+.prevention .container .box h3 {
+  font-size: 18px;
+  color: #3c6382;
+}
+
+.prevention .container .box p {
+  font-size: 14px;
+  padding: 16px;
+  color: #0a3d62;
+}
+
+.prevention .container .box img {
+  height: 150px;
+  padding: 16px;
+}
+
+.prevention .container .box:hover { 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Symptoms Section */
+.symptoms {
+  background: url(../images/background-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.symptoms .heading{
+  padding-top: 7px;
+}
+
+.symptoms .column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.symptoms .column .main-image-symptoms img {
+  width: 37vh;
+}
+
+.symptoms .column .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.symptoms .column .container .box {
+  margin: 16px; /* is 1 rem */
+  text-align: center;
+}
+
+.symptoms .column .container .box img {
+  width: 20rem;
+  padding: 17px;
+}
+
+.symptoms .column .container .box h3 {
+  font-size: 22px;
+  color: #3c6382;
+}
+
+/* Precaution Section */
+.steps-to-do .column {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px; 
+  flex-wrap: wrap;
+}
+
+.steps-to-do .heading {
+  padding-bottom: 30px; 
+}
+
+.steps-to-do .column .container {
+  margin: 12px; 
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); 
+  flex: 1 1 40rem; 
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.steps-to-do .column .container:first-child h3 {
+  background:green;
+}
+
+.steps-to-do .column .container:last-child h3 {
+  background: red;
+}
+
+.steps-to-do .column .container h3 {
+  padding: 10px; 
+  text-align: center;
+  font-size: 24px; 
+  background: #3c6382;
+  color: #fff;
+}
+
+.steps-to-do .column .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px; 
+  padding-top: 30px; 
+}
+
+.steps-to-do .column .container .box img {
+  width: 80px; 
+  height: 80px; 
+  padding: 12px; 
+}
+
+.steps-to-do .column .container .box .info h1 {
+  font-size: 18px; 
+}
+
+.steps-to-do .column .container .box .info p {
+  font-size: 14px; 
+  color: #0a3d62;
+  padding: 8px 0; 
+}
+
+/* Footer */
+footer {
+  background: url(../images/background-img.jpg);
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 80px;
+}
+
+footer .container {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 70px;
+  display: grid;
+}
+
+footer .container .ft h2 {
+  position: relative;
+  font-weight: bold;
+  color: #2f2f2f;
+  margin-bottom: 13px;
+  font-size: 24px;
+}
+
+footer .container .ft p {
+  color: #0a3d62;
+  font-size: 16px; 
+}
+
+footer .container .media-logo {
+  margin-top: 30px;
+  grid-template-columns: repeat(4, 70px);
+  display: grid;
+}
+
+footer .container .media-logo li {
+  list-style: none;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+footer .container .links {
+  position: relative;
+}
+
+footer .container .links ul li {
+  list-style: none;
+}
+
+footer .container .links ul li a {
+  color: #0a3d62;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 16px; 
+}
+
+footer .container .contact .contact-info {
+  position: relative;
+}
+
+footer .container .contact .contact-info li {
+  display: grid;
+  grid-template-columns: 27px 1fr;
+  margin-bottom: 16px;
+}
+
+footer .container .contact .contact-info li span {
+  font-size: 19px;
+}
+
+
+/* Button Styles (auto scroll back to the top button) */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #0a3d62;
+  border: 2px solid #0a3d62;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+  
+  #back-to-top-btn:hover {
+  background-color: #0a3d62;
+  color: #fff;
+}
+
+/* Scrolling Animation */
+.scrolling-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
+}
+
+.scrolling-animation.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 16px 4%;
+    padding-top: 100px;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 22px;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  header .navbar.nav-toggle {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  header .navbar a {
+    display: block;
+    margin: 14px;
+    font-size: 18px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .main .cta{
+    padding-top: 25px;
+  }
+
+  .main .cta h1{
+    font-size:40px;
+  }
+
+  .main .cta h3{
+    font-size: 32px;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .symptoms .column .main-image img {
+    width: 22vh;
+    height: 16vh;
+  }
+
+  .symptoms .column .container .box img {
+    width: 19rem;
+    padding: 14px;
+  }
+  
+  .symptoms .column .container .box h3 {
+    font-size: 18px;
+    color: #3c6382;
+  }
+  footer{
+    padding : 40px;
+  }
+  footer .container{
+    width : 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 100px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main{
+    background-size: 165vh;
+  }
+  
+  /* Header Section */
+  header .navbar {
+    padding: 1rem;
+  }
+
+  header .navbar a {
+    margin: 8px;
+    font-size: 16px;
+  }
+
+  /* Main Section */
+  .main .cta {
+    padding-top: 20px;
+  }
+
+  .main .cta h1 {
+    font-size: 32px;
+  }
+
+  .main .cta h3 {
+    font-size: 24px;
+  }
+
+  /* Prevention Section */
+  .prevention .container .box {
+    flex: 1 1 calc(50% - 32px); /* Two boxes per row */
+    margin: 8px;
+  }
+
+  .prevention .container .box img {
+    height: 100px;
+  }
+
+  .prevention .container .box h3 {
+    font-size: 16px;
+  }
+
+  .prevention .container .box p {
+    font-size: 15px;
+  }
+
+  /* Symptoms Section */
+  .symptoms .column .main-image-symptoms img {
+    width: 30vh;
+  }
+
+  .symptoms .column .container .box {
+    flex: 1 1 calc(50% - 32px); /* Two boxes per row */
+    margin: 8px;
+  }
+
+  .symptoms .column .container .box img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .symptoms .column .container .box h3 {
+    font-size: 17px;
+  }
+
+  /* Precaution Section */
+  .steps-to-do .column .container {
+    margin: 12px;
+  }
+
+  .steps-to-do .column .container .box {
+    flex: 1 1 100%; 
+    margin: 8px;
+  }
+
+  .steps-to-do .column .container .box img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .steps-to-do .column .container .box .info h1 {
+    font-size: 16px;
+  }
+
+  .steps-to-do .column .container .box .info p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: (1,1fr);
+    grid-gap: 40px;
+  }
+
+}
+
+
+
+
