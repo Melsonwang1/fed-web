@@ -168,3 +168,16 @@ function start() {
         gamearea.appendChild(othercar);
     }
 }
+
+// Hamburger Menu (for smaller view size)
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById("menu");
+    const navbar = document.querySelector("header .navbar");
+  
+    // Toggle navbar visibility when menu icon is clicked
+    menuIcon.addEventListener("click", function() {
+      navbar.classList.toggle("nav-toggle");
+      menuIcon.classList.toggle("fa-bars");
+      menuIcon.classList.toggle("fa-times");
+    });
+  });
