@@ -32,6 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+ // Loading Animation
+ document.addEventListener("DOMContentLoaded", function() {
+  // Hide preloader after 2-3 seconds
+  setTimeout(function() {
+    document.getElementById("pre-loading-animation").style.display = "none";
+  }, 3000); 
+});
+
 
 
 

@@ -34,6 +34,13 @@ section {
     padding-top: 100px;
 }
 
+#menu {
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+
 
 /* Header Section */
 header {
@@ -78,9 +85,6 @@ header .navbar a:hover {
     padding: 20px;
     transform: scale(0.8); 
 }
-
-
-  
 
 
 
@@ -205,32 +209,46 @@ footer .container .contact .contact-info li span {
 
 @media (max-width: 991px) {
     section {
-      padding: 16px 4%;
-      padding-top: 100px;
+        padding: 16px 4%;
+        padding-top: 100px;
     }
-  
     header .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      padding: 22px;
-      border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-      transform-origin: top;
-      transform: scaleY(0);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 22px;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        transform-origin: top;
+        transform: scaleY(0);
     }
-  
+    
     header .navbar.nav-toggle {
-      transform: scaleY(1);
-      opacity: 1;
+        transform: scaleY(1);
+        opacity: 1;
     }
-  
+    
     header .navbar a {
-      display: block;
-      margin: 14px;
-      font-size: 18px;
+        display: block;
+        margin: 14px;
+        font-size: 18px;
     }
+    
+    #menu {
+        display: block;
+    }
+    footer{
+        padding : 40px;
+    }
+    footer .container{
+        width : 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 100px;
+    }
+    
+      
 }
 
 
@@ -249,4 +267,12 @@ footer .container .contact .contact-info li span {
       margin: 8px;
       font-size: 16px;
     }
+    /* Footer */
+    footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: (1,1fr);
+        grid-gap: 40px;
+    }
+  
 }

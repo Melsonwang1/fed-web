@@ -43,6 +43,13 @@ section {
   padding-top: 100px;
 }
 
+#menu {
+  font-size: 3rem;
+  color: var(--blue);
+  cursor: pointer;
+  display: none;
+}
+
 .no-select {
   /* prevent blue highlighting */
   -webkit-touch-callout: none;
@@ -54,6 +61,53 @@ section {
   user-select: none;
   /* for chrome on android */
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Loading Section */
+.preloading {
+  background: #fff; /* use white background for now*/
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+}
+
+.preloading .icon-loading .loading-dot {
+  background-color: #0a3d62;
+  border-radius: 50%;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-1st {
+  animation: 1.2s grow ease-in-out infinite 0.1s; 
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-2nd {
+  animation: 1.2s grow ease-in-out infinite 0.16s; 
+  margin: 0 14px;
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-3rd {
+  animation: 1.2s grow ease-in-out infinite 0.22s; 
+}
+
+.preloading .icon-loading .loading-dot.loading-dot-4th {
+  animation: 1.2s grow ease-in-out infinite 0.28s; 
+  margin: 0 14px;
+}
+
+@keyframes grow {
+  0%, 50%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
 }
 
 /* Header Section */
@@ -298,8 +352,23 @@ footer .container .contact .contact-info li span {
     margin: 14px;
     font-size: 18px;
   }
+
+  #menu {
+    display: block;
+  }
+
   ol {
     width: 90vw;
+  }
+
+  footer{
+    padding : 40px;
+  }
+  footer .container{
+    width : 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 100px;
   }
 }
 
