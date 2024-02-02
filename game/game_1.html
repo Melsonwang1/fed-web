@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid Obstacle Game</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Covid 19 website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
+<header>
+    <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
+  
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class=" navbar">
+        <a href="..//homepage/index.html">Home</a>
+        <a href="..//map/index.html">Map Cases</a>
+        <a href="..//news/news.html"class="active">News</a>
+        <a href="..//quiz/quiz page.html">Quiz</a>
+        <a href="..//game/game_1.html">Game</a>
+        <a href="..//login/login.js">Login</a>
+    </nav>
+  </header>
+
+
 <body>
     <div class="CarGame">
         <div class="Score">
@@ -17,6 +38,60 @@
         <div class="GameArea">
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="ft aboutus">
+                <h2>About Us</h2>
+                <p>This website can provide details about Covid-19, and also aims to create awareness in you and have a better understanding
+                    of the virus.</p>
+                <ul class="media-logo">
+                    <li><a href= "#"><i class="fab fa-facebook" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-twitter" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-instagram" style="color: #d41c7e;"></i></i></a></li>
+                    <li><a href= "#"><i class="fab fa-youtube" style="color: #f02828;"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>   
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Map Cases</a></li>
+                    <li><a href="../news/news.html">News</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="ft contact">
+                <h2>Contact Us</h2>
+                <ul class="contact-info">
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <p><a href="#">+65 6123 4567</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="#">coVidSG@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Button for the user to scroll back to the top -->
+    <button id="back-to-top-btn" onclick="scrollingTOP()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
     <script src="script.js"></script>   
     <link rel="stylesheet" href="style.css">    
 </body>
