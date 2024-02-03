@@ -42,50 +42,29 @@ section {
 }
 
 /* Loading Section */
-.preloading {
-  background: url(../images/background-img.jpg);
+/* Style to cover the entire viewport */
+.loading-overlay {
   position: fixed;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: url(../images/background-img.jpg); 
+  z-index: 9999; /* Ensure the loading overlay appears above other content */
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  display: flex;
 }
 
-.preloading .icon-loading .loading-dot {
-  background-color: #0a3d62;
-  border-radius: 50%;
-  display: inline-block;
-  height: 25px;
-  width: 25px;
+/* Style for the Lottie animation container */
+#loading-animation {
+  width: 300px;
+  height: 300px;
 }
 
-.preloading .icon-loading .loading-dot.loading-dot-1st {
-  animation: 1.2s grow ease-in-out infinite 0.1s; 
-}
-
-.preloading .icon-loading .loading-dot.loading-dot-2nd {
-  animation: 1.2s grow ease-in-out infinite 0.16s; 
-  margin: 0 14px;
-}
-
-.preloading .icon-loading .loading-dot.loading-dot-3rd {
-  animation: 1.2s grow ease-in-out infinite 0.22s; 
-}
-
-.preloading .icon-loading .loading-dot.loading-dot-4th {
-  animation: 1.2s grow ease-in-out infinite 0.28s; 
-  margin: 0 14px;
-}
-
-@keyframes grow {
-  0%, 50%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
+/* Style to hide content initially */
+#content {
+  display: none;
 }
 
 /* Header Section */
@@ -429,31 +408,22 @@ footer .container .contact .contact-info li span {
     padding-top: 100px;
   }
 
-  header .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    padding: 22px;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-    transform-origin: top;
-    transform: scaleY(0);
+  header .logo {
+    font-size: 27px;
+    color: #3c6382;
   }
-
-  header .navbar.nav-toggle {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-
+  
   header .navbar a {
-    display: block;
-    margin: 14px;
-    font-size: 18px;
+    font-size: 19px;
+    padding: 4px 14px;
+    margin-left: 12px;
+    border-radius: 10px;
+    color: #0a3d62; /* Dark Blue */
   }
+  
 
   #menu {
-    display: block;
+    display: none;
   }
 
   .main .cta{
@@ -505,12 +475,35 @@ footer .container .contact .contact-info li span {
   
   /* Header Section */
   header .navbar {
-    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 22px;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.3s ease; /* Add transition for smoother animation */
+  }
+
+  header .navbar.nav-toggle {
+    transform: scaleY(1);
+    opacity: 1;
   }
 
   header .navbar a {
-    margin: 8px;
+    display: block;
+    margin: 8px; /* Adjust margin for smaller screens */
     font-size: 16px;
+  }
+
+  header .navbar {
+    padding: 1rem;
+  }
+
+  #menu {
+    display: block; /* Display the hamburger menu icon for screens up to 768px */
   }
 
   /* Main Section */

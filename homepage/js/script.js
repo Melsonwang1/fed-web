@@ -33,13 +33,12 @@
   });
   
 
-  // Loading Animation
-  document.addEventListener("DOMContentLoaded", function() {
-    // Hide preloader after 2-3 seconds
-    setTimeout(function() {
-      document.getElementById("pre-loading-animation").style.display = "none";
-    }, 3000); 
-  });
+  // Show the content after 3 seconds
+  setTimeout(function() {
+    // Hide the loading overlay
+    document.querySelector('.loading-overlay').style.display = 'none';
+
+  }, 4000); // Adjust the delay time as needed (in milliseconds)
 
 
 

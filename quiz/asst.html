@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Navigation Section-->
+    <header>
+        <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class=" navbar">
+            <a href="#">Home</a>
+            <a href="#">Map Cases</a>
+            <a href="#">News</a>
+            <a href="#" class="active">Quiz</a>
+            <a href="#">Game</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <!-- Self Assessment Container-->
+    <div class="asst-container">
+        <img src="images/assessment.png" alt="Assessment Icon">
+        <h1>Covid 19 Self Assessment Quiz</h1>
+        <p>Take this self-assessment to evaluate your risk of COVID-19 infection based on recent activities and symptoms.</p>
+        <button id="startButton" class="btn" onclick="startAssessment()">Start</button>
+        <div id="question"></div>
+        <div id="loading" style="display: none;">
+            <dotlottie-player src="https://lottie.host/efdb3d22-dad5-4b18-8ff2-041ef4179307/V4feVPc5wQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
+        <div id="result" style="display: none;"></div>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="ft aboutus">
+                <h2>About Us</h2>
+                <p>This website can provide details about Covid-19, and also aims to create awareness in you and have a better understanding
+                    of the virus.</p>
+                <ul class="media-logo">
+                    <li><a href= "#"><i class="fab fa-facebook" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-twitter" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-instagram" style="color: #d41c7e;"></i></i></a></li>
+                    <li><a href= "#"><i class="fab fa-youtube" style="color: #f02828;"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>   
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Map Cases</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="ft contact">
+                <h2>Contact Us</h2>
+                <ul class="contact-info">
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <p><a href="#">+65 6123 4567</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="#">coVidSG@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Button for the user to scroll back to the top -->
+    <button id="back-to-top-btn" onclick="scrollingTOP()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+</body>
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
