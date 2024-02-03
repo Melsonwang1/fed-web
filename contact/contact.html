@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style-contact.css">
+
+    <!-- Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--Navigation Section-->
+    <header>
+        <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class=" navbar">
+            <a href="#">Home</a>
+            <a href="#">Map Cases</a>
+            <a href="#">News</a>
+            <a href="#">Quiz</a>
+            <a href="#">Game</a>
+            <a href="#" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Contact Form-->
+    <section>
+        <div class="form-container">
+            <h1>Contact Form</h1>
+            <p>Get in touch with us by using the simple contact form below.</p>
+    
+            <div class="form" id="add-contact">
+                <form id="add-contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" placeholder="Tommy Tan" id="contact-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" placeholder="tommytan69@gmail.com"  id="contact-email" class="form-control" required>
+                        <small id="contact-email-help" class="form-text text-muted">Don't worry, we'll never share your email with anyone.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-number">Phone Number</label>
+                        <input type="tel" inputmode="numeric" placeholder="9283 0221" id="contact-number" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" placeholder="Covid-19 Isolation" id="contact-subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-msg">Message</label>
+                        <textarea id="contact-msg" placeholder="Type in your message here...." class="form-control" required></textarea>
+                    </div>
+        
+                    <input type="submit" value="Submit" class="btn btn-primary" id="contact-submit">
+                </form>
+            </div>
+
+            <div id="add-update-msg">
+                <div class="alert alert-success" role="alert">
+                    <dotlottie-player src="https://lottie.host/df2f61ea-5182-4f18-864a-3f0dd0333d0e/XhRI2H4SWt.json" background="transparent" speed="0.8" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="ft aboutus">
+                <h2>About Us</h2>
+                <p>This website can provide details about Covid-19, and also aims to create awareness in you and have a better understanding
+                    of the virus.</p>
+                <ul class="media-logo">
+                    <li><a href= "#"><i class="fab fa-facebook" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-twitter" style="color: #0091ff;"></i></a></li>
+                    <li><a href= "#"><i class="fab fa-instagram" style="color: #d41c7e;"></i></i></a></li>
+                    <li><a href= "#"><i class="fab fa-youtube" style="color: #f02828;"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>   
+                </ul>
+            </div>
+            <div class="ft links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Map Cases</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="ft contact">
+                <h2>Contact Us</h2>
+                <ul class="contact-info">
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <p><a href="#">+65 6123 4567</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="#">coVidSG@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Button for the user to scroll back to the top -->
+    <button id="back-to-top-btn" onclick="scrollingTOP()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+
+</body>
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script-contact.js"></script>
+
+</html>
