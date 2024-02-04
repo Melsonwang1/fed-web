@@ -32,4 +32,22 @@
     });
   });
 
-  
+  // JavaScript to toggle the loading animation
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the preloading element
+  var preloading = document.getElementById('pre-loading-animation');
+
+  // Toggle the 'active' class to show or hide the loading animation
+  function toggleLoadingAnimation() {
+      preloading.classList.toggle('active');
+  }
+
+  // Call toggleLoadingAnimation function to show the loading animation
+  toggleLoadingAnimation();
+
+  // Example: Hide the loading animation after 3 seconds (adjust as needed)
+  setTimeout(function() {
+      toggleLoadingAnimation();
+  }, 3000);
+});
+
