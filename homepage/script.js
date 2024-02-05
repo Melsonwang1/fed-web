@@ -21,7 +21,7 @@
 
   // Hamburger Menu (for smaller view size)
   document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.getElementById("menu");
+    const menuIcon = document.getElementById("hamburger-menu");
     const navbar = document.querySelector("header .navbar");
   
     // Toggle navbar visibility when menu icon is clicked
@@ -32,14 +32,12 @@
     });
   });
   
-
-  // Show the content after 3 seconds
+  // Loading Animation 
   setTimeout(function() {
-    // Hide the loading overlay
-    document.querySelector('.loading-overlay').style.display = 'none';
-
-  }, 4000); // Adjust the delay time as needed (in milliseconds)
-
-
-
-
+    var loadingElements = document.getElementsByClassName('loading');
+  
+    // Check if there are any elements
+    if (loadingElements.length > 0) {
+        loadingElements[0].style.display = 'none';
+    }
+  }, 3000); // show content after 3 seconds

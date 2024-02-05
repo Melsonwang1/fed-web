@@ -1,29 +1,26 @@
-
-:root {
-  --blue: #3c6382;
-  --dark-blue: #0a3d62;
-}
-
+/* Global Styles */
 * {
   font-family: "poppins", sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: none;
-  box-sizing: border-box;
-  outline: none;
   text-decoration: none;
-  transition: 0.3s ;
+  transition: 0.34s;
+  outline: none;
 }
 
 html {
+  --blue: #3c6382;
+  --dark-blue: #0a3d62;
   font-size: 63%;
   overflow-x: hidden;
 }
 
 section {
-  min-height: 100vh;
   padding: 16px 9%;
   padding-top: 100px;
+  min-height: 100vh;
 }
 
 .heading {
@@ -34,45 +31,36 @@ section {
   padding: 16px;
 }
 
-#menu {
-  font-size: 3rem;
-  color: var(--blue);
-  cursor: pointer;
+#hamburger-menu {
+  font-size: 25px;
   display: none;
+  color: #3c6382;
+  cursor: pointer;
 }
 
 /* Loading Section */
-/* Style to cover the entire viewport */
-.loading-overlay {
+.loading {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../images/background-img.jpg); 
-  z-index: 9999; /* Ensure the loading overlay appears above other content */
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(images/background.jpg); 
+  z-index: 1; 
 }
 
-/* Style for the Lottie animation container */
 #loading-animation {
   width: 300px;
   height: 300px;
-}
-
-/* Style to hide content initially */
-#content {
-  display: none;
 }
 
 /* Header Section */
 header {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background: #fff;
   position: fixed;
   padding: 21px; 
@@ -86,47 +74,47 @@ header .logo {
 header .navbar a {
   font-size: 20px;
   padding: 8px 20px;
-  margin-left: 12px;
   border-radius: 10px;
-  color: #0a3d62; /* Dark Blue */
+  margin-left: 12px;
+  color: #0a3d62; 
 }
 
 header .navbar a:hover {
-  background: #3c6382; /* Blue */
+  background: #3c6382; 
   color: #fff;
 }
 
 header .navbar a.active,
 header .navbar a:hover {
-  background: var(--blue);
+  background: #3c6382;
   color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 /* Main Section */
 .main {
-  background: url(../images/home-bg.jpg);
-  background-size: cover;
+  background: url(images/grp\ mask.jpg);
   background-position: center;
+  background-size: cover; 
 }
 
 .main .cta {
   text-align: center;
-  padding-top: 31px; /* need for mobile view later */
+  padding-top: 31px; 
 }
 
 .main .cta h1 {
   font-size: 48px;
   font-weight: bold;
-  padding-top: 10px;
   color: #0a3d62;
+  padding-top: 10px;
 }
 
 .main .cta h3 {
   font-size: 40px;
   font-weight: normal;
-  padding-bottom: 20px;
   color: #3c6382;
+  padding-bottom: 20px;
 }
 
 .main .cta .btn {
@@ -139,12 +127,12 @@ header .navbar a:hover {
   box-shadow: 0 8px 16px rgba(46, 46, 46, 0.1);
 }
 
-.main .cta .btn:hover { /* hover effect at main */
+.main .cta .btn:hover { 
   background: #0a3d62;
 }
 
-/* Prevention Section */
-.prevention .container {
+/* Protection Section */
+.protection .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,37 +140,38 @@ header .navbar a:hover {
   padding-top: 10px;
 }
 
-.prevention .container .box {
+.protection .container .box {
   text-align: center;
+  flex: 1 1 28rem;
   border-radius: 10px;
   margin: 16px;
-  flex: 1 1 28rem;
   padding: 10px;
 }
 
-.prevention .container .box h3 {
+.protection .container .box:hover { 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.protection .container .box h3 {
   font-size: 18px;
   color: #3c6382;
 }
 
-.prevention .container .box p {
+.protection .container .box p {
   font-size: 14px;
   padding: 16px;
   color: #0a3d62;
 }
 
-.prevention .container .box img {
+.protection .container .box img {
   height: 150px;
   padding: 16px;
 }
 
-.prevention .container .box:hover { 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
 
-/* Symptoms Section */
+/* Symptoms of COVID 19 Section */
 .symptoms {
-  background: url(../images/background-img.jpg);
+  background: url(images/background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -208,22 +197,22 @@ header .navbar a:hover {
   flex-wrap: wrap;
 }
 
-.symptoms .column .container .box {
-  margin: 16px; /* is 1 rem */
+.symptoms .column .container .symptom-container {
+  margin: 16px; 
   text-align: center;
 }
 
-.symptoms .column .container .box img {
+.symptoms .column .container .symptom-container img {
   width: 20rem;
   padding: 17px;
 }
 
-.symptoms .column .container .box h3 {
+.symptoms .column .container .symptom-container h3 {
   font-size: 22px;
   color: #3c6382;
 }
 
-/* Precaution Section */
+/* Steps To Do Section */
 .steps-to-do .column {
   display: flex;
   justify-content: center;
@@ -273,11 +262,11 @@ header .navbar a:hover {
   padding: 12px; 
 }
 
-.steps-to-do .column .container .box .info h1 {
+.steps-to-do .column .container .box .steps-info h1 {
   font-size: 18px; 
 }
 
-.steps-to-do .column .container .box .info p {
+.steps-to-do .column .container .box .steps-info p {
   font-size: 14px; 
   color: #0a3d62;
   padding: 8px 0; 
@@ -285,7 +274,7 @@ header .navbar a:hover {
 
 /* Footer */
 footer {
-  background: url(../images/background-img.jpg);
+  background: url(images/background.jpg);
   position: relative;
   width: 100%;
   height: auto;
@@ -383,19 +372,7 @@ footer .container .contact .contact-info li span {
   color: #fff;
 }
 
-/* Scrolling Animation */
-.scrolling-animation {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 0.6s;
-}
-
-.scrolling-animation.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
+/* Smaller Size Views */
 @media (max-width: 1200px) {
   html {
     font-size: 54%;
@@ -408,6 +385,7 @@ footer .container .contact .contact-info li span {
     padding-top: 100px;
   }
 
+  /* Header Section */
   header .logo {
     font-size: 27px;
     color: #3c6382;
@@ -415,17 +393,18 @@ footer .container .contact .contact-info li span {
   
   header .navbar a {
     font-size: 19px;
-    padding: 4px 14px;
+    padding: 4px 9px;
     margin-left: 12px;
     border-radius: 10px;
-    color: #0a3d62; /* Dark Blue */
+    color: #0a3d62; 
   }
   
-
-  #menu {
+  /* Navigation Section */
+  #hamburger-menu {
     display: none;
   }
 
+  /* Main Section */
   .main .cta{
     padding-top: 25px;
   }
@@ -438,53 +417,48 @@ footer .container .contact .contact-info li span {
     font-size: 32px;
   }
 
-  .fa-times {
-    transform: rotate(180deg);
-  }
-
+  /* Symptoms of COVID 19 Section */
   .symptoms .column .main-image img {
-    width: 22vh;
-    height: 16vh;
+    width: 166px;
+    height: 128px;
   }
 
-  .symptoms .column .container .box img {
-    width: 19rem;
+  .symptoms .column .container .symptom-container img {
+    width: 175px;
     padding: 14px;
   }
   
-  .symptoms .column .container .box h3 {
+  .symptoms .column .container .symptom-container h3 {
     font-size: 18px;
     color: #3c6382;
   }
+
+  /* Footer Section */
   footer{
     padding : 40px;
   }
+
   footer .container{
     width : 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 100px;
   }
-
 }
 
 @media (max-width: 768px) {
-  .main{
-    background-size: 165vh;
-  }
-  
   /* Header Section */
   header .navbar {
     position: absolute;
     top: 100%;
-    left: 0;
     width: 100%;
+    left: 0;
     background: #fff;
     padding: 22px;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     transform-origin: top;
     transform: scaleY(0);
-    transition: transform 0.3s ease; /* Add transition for smoother animation */
+    transition: 0.3s; 
   }
 
   header .navbar.nav-toggle {
@@ -494,19 +468,28 @@ footer .container .contact .contact-info li span {
 
   header .navbar a {
     display: block;
-    margin: 8px; /* Adjust margin for smaller screens */
+    margin: 8px; 
     font-size: 16px;
   }
 
   header .navbar {
-    padding: 1rem;
+    padding: 18px;
   }
 
-  #menu {
-    display: block; /* Display the hamburger menu icon for screens up to 768px */
+  /* Navigation Section */
+  #hamburger-menu {
+    display: block; 
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
   }
 
   /* Main Section */
+  .main{
+    background-size: 165vh;
+  }
+
   .main .cta {
     padding-top: 20px;
   }
@@ -519,44 +502,44 @@ footer .container .contact .contact-info li span {
     font-size: 24px;
   }
 
-  /* Prevention Section */
-  .prevention .container .box {
+  /* Protection Section */
+  .protection .container .box {
     flex: 1 1 calc(50% - 32px); /* Two boxes per row */
     margin: 8px;
   }
 
-  .prevention .container .box img {
+  .protection .container .box img {
     height: 100px;
   }
 
-  .prevention .container .box h3 {
+  .protection .container .box h3 {
     font-size: 16px;
   }
 
-  .prevention .container .box p {
+  .protection .container .box p {
     font-size: 15px;
   }
 
-  /* Symptoms Section */
+  /* Symptoms of COVID 19 Section */
   .symptoms .column .main-image-symptoms img {
     width: 30vh;
   }
 
-  .symptoms .column .container .box {
+  .symptoms .column .container .symptom-container {
     flex: 1 1 calc(50% - 32px); /* Two boxes per row */
     margin: 8px;
   }
 
-  .symptoms .column .container .box img {
+  .symptoms .column .container .symptom-container img {
     width: 130px;
     height: 130px;
   }
 
-  .symptoms .column .container .box h3 {
+  .symptoms .column .container .symptom-container h3 {
     font-size: 17px;
   }
 
-  /* Precaution Section */
+  /* Steps To Do Section */
   .steps-to-do .column .container {
     margin: 12px;
   }
@@ -571,11 +554,11 @@ footer .container .contact .contact-info li span {
     height: 60px;
   }
 
-  .steps-to-do .column .container .box .info h1 {
+  .steps-to-do .column .container .box .steps-info h1 {
     font-size: 16px;
   }
 
-  .steps-to-do .column .container .box .info p {
+  .steps-to-do .column .container .box .steps-info p {
     font-size: 14px;
   }
 
@@ -586,9 +569,4 @@ footer .container .contact .contact-info li span {
     grid-template-columns: (1,1fr);
     grid-gap: 40px;
   }
-
 }
-
-
-
-
