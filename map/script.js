@@ -51,3 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 3000);
 });
 
+// for p in .widget-container
+document.getElementById(
+  'thisYear'
+).innerHTML = new Date().getFullYear();
