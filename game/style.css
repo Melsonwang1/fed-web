@@ -19,7 +19,6 @@
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
-    transition: 0.3s ;
 }
 html {
     font-size: 100%;
@@ -301,7 +300,11 @@ footer .container .contact .contact-info li span {
 }
 @media (max-width: 1200px) {
     html {
-      font-size: 54%;
+      font-size: 50%;
+    }
+    .Score {
+        width: 250px;
+        font-size: 24px;
     }
 }
 
@@ -336,6 +339,10 @@ footer .container .contact .contact-info li span {
     #menu {
         display: block;
     }
+    .Score {
+        width: 200px;
+        font-size: 20px;
+    }
     footer{
         padding : 40px;
     }
@@ -361,6 +368,11 @@ footer .container .contact .contact-info li span {
     header .navbar a {
       margin: 8px;
       font-size: 16px;
+    }
+    .Score {
+        width: 150px;
+        font-size: 18px;
+        left: 20px;
     }
     /* Footer */
     footer .container{
