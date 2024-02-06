@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid 19 website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style-contact.css">
+    <link rel="stylesheet" href="style-contact.css"> <!-- Link To CSS -->
 
     <!-- Import Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 <body>
 
     <!-- Loading Section -->
-    <div class="preloading" id="pre-loading-animation" >
+    <div class="loading">
         <div class="icon-loading">
             <span class="loading-dot loading-dot-1st"></span>
             <span class="loading-dot loading-dot-2nd"></span>
@@ -26,12 +26,11 @@
         </div>
     </div>
 
-
     <!--Navigation Section-->
     <header>
-        <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
+        <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID 19</a> <!--Covid Logo -->
 
-        <div id="menu" class="fas fa-bars"></div>
+        <div id="hamburger-menu" class="fas fa-bars"></div>
         <nav class=" navbar">
             <a href="..//homepage/index.html">Home</a>
             <a href="..//map/index.html">Map Cases</a>
@@ -42,7 +41,7 @@
         </nav>
     </header>
 
-    <!-- Contact Form-->
+    <!-- Contact Form Section -->
     <section>
         <div class="form-container">
             <img src="contact-us.png" alt="Contact Us Icon">
@@ -50,7 +49,7 @@
             <p>Get in touch with us by using the simple contact form below.</p>
     
             <div class="form" id="add-contact">
-                <form id="add-contact-form">
+                <form id="contact-form">
                     <div class="form-group">
                         <label for="contact-name">Name</label>
                         <input type="text" placeholder="Tommy Tan" id="contact-name" class="form-control" required>
@@ -69,15 +68,15 @@
                         <input type="text" placeholder="Covid-19 Isolation" id="contact-subject" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="contact-msg">Message</label>
-                        <textarea id="contact-msg" placeholder="Type in your message here...." class="form-control" required></textarea>
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Type in your message here...." class="form-control" required></textarea>
                     </div>
         
                     <input type="submit" value="Submit" class="btn btn-primary" id="contact-submit">
                 </form>
             </div>
 
-            <div id="add-update-msg">
+            <div id="update-msg">
                 <div class="alert alert-success" role="alert">
                     <dotlottie-player src="https://lottie.host/df2f61ea-5182-4f18-864a-3f0dd0333d0e/XhRI2H4SWt.json" background="transparent" speed="0.8" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
                 </div>
@@ -138,11 +137,9 @@
     <!-- Button for the user to scroll back to the top -->
     <button id="back-to-top-btn" onclick="scrollingTOP()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 
+    <!-- Link To JavaScript -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="script-contact.js"></script>
 
 </body>
-
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="script-contact.js"></script>
-
 </html>
