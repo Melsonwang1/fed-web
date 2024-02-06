@@ -1,3 +1,4 @@
+/* questions prompt to the user */
 const questions = [
     {
         question: "Question 1: Are you <strong>65 years old or older</strong>, born in 1959 or earlier?",
@@ -31,59 +32,61 @@ const questions = [
 
 let currentQuestionIndex = 0;
 
+// display the current question and options
 function displayQuestion() {
     const questionDiv = document.getElementById("question");
-    questionDiv.innerHTML = `
-        <p>${questions[currentQuestionIndex].question}</p>
-        ${questions[currentQuestionIndex].options
-            .map(
-                (option) =>
-                    `<button class="btn ${option === 'Yes' ? 'btn-yes' : 'btn-no'}" onclick="selectOption('${option}')">${option}</button>`
-            )
-            .join("")}
-    `;
+    const currentQuestion = questions[currentQuestionIndex];
+
+    const optionsHTML = currentQuestion.options.map(option =>
+        `<button class="btn ${option === 'Yes' ? 'btn-yes' : 'btn-no'}" onclick="selectOption('${option}')">${option}</button>`
+    ).join("");
+
+    questionDiv.innerHTML = `<p>${currentQuestion.question}</p>${optionsHTML}`;
 }
 
+// questions will be shown only after the user click the start button
 function startAssessment() {
     document.getElementById("startButton").style.display = "none";
     displayQuestion();
 }
 
+// handle the user selection of the options
 function selectOption(option) {
-    const resultDiv = document.getElementById("result");
-    const loadingDiv = document.getElementById("loading");
+    const results = document.getElementById("result");
+    const loadingg = document.getElementById("loading-for-result");
     
-    resultDiv.innerHTML = "";
+    results.innerHTML = "";
     questions[currentQuestionIndex].selectedOption = option;
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
         displayQuestion();
     } else {
-        loadingDiv.style.display = "block"; // Show loading animation
+        loadingg.style.display = "block"; // Show loading animation
 
-        // Simulate loading time (3 seconds) using setTimeout
         setTimeout(() => {
-            loadingDiv.style.display = "none"; // Hide loading animation
+            loadingg.style.display = "none"; 
             showResult(); // Show the result after the loading time
-        }, 3000);
+        }, 3000); // results will be shown after 3 seconds
     }
 }
 
+// Display the results based on the questions the user answered
 function showResult() {
-    const resultDiv = document.getElementById("result");
+    const results_loading = document.getElementById("loading-for-result");
     const score = countScore();
 
-    if (score >= 3) {
-        resultDiv.innerHTML = "<p class='result'>Result: You might to be COVID-19 positive. Please consult a doctor and do take an ART test.</p>";
+    // if the number of 'Yes' answered is more than or equal to 4
+    if (score >= 4) {
+        results_loading.innerHTML = "<p class='result'>Result: You might be COVID-19 positive. Please consult a doctor and do take an ART test.</p>";
     } else {
-        resultDiv.innerHTML = "<p class='result'>Result: You are likely to be COVID-19 negative. Stay Safe!</p>";
+        results_loading.innerHTML = "<p class='result'>Result: You are likely to be COVID-19 negative. Stay Safe!</p>";
     }
 
-    resultDiv.style.display = "block"; // Show the result
+    results_loading.style.display = "block"; // Show the result
 }
 
-
+// Count the number of 'Yes' the user answered
 function countScore() {
     let score = 0;
     for (let i = 0; i < questions.length; i++) {
@@ -103,8 +106,8 @@ function scrollingTOP() {
     });
 }
 
-  // Show or hide the scroll to top button based on scroll position
-  document.addEventListener("scroll", function () {
+// Show or hide the scroll to top button based on scroll position
+document.addEventListener("scroll", function () {
     const scrollToTopBtn = document.getElementById("back-to-top-btn");
     if (scrollToTopBtn) {
         // Using if-else loop to check whether the scrolling position is more than 100px from the top of the page
@@ -118,7 +121,7 @@ function scrollingTOP() {
 
   // Hamburger Menu (for smaller view size)
   document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.getElementById("menu");
+    const menuIcon = document.getElementById("hamburger-menu");
     const navbar = document.querySelector("header .navbar");
   
     // Toggle navbar visibility when menu icon is clicked
@@ -129,21 +132,21 @@ function scrollingTOP() {
     });
   });
 
-  // JavaScript to toggle the loading animation
-document.addEventListener('DOMContentLoaded', function() {
-    // Select the preloading element
-    var preloading = document.getElementById('pre-loading-animation');
-  
-    // Toggle the 'active' class to show or hide the loading animation
-    function toggleLoadingAnimation() {
-        preloading.classList.toggle('active');
+  // Loading Animation
+  document.addEventListener('DOMContentLoaded', function() {
+    var loadings = document.getElementsByClassName('loading');
+
+    // use a For loop to loop through each element
+    for (var i = 0; i < loadings.length; i++) {
+        var preloading = loadings[i];
+        preloading.classList.toggle('active'); // to show or hide the animation
     }
-  
-    // Call toggleLoadingAnimation function to show the loading animation
-    toggleLoadingAnimation();
-  
-    // Example: Hide the loading animation after 3 seconds (adjust as needed)
+
     setTimeout(function() {
-        toggleLoadingAnimation();
-    }, 3000);
-});
+        for (var i = 0; i < loadings.length; i++) {
+            loadings[i].classList.toggle('active');
+        }
+    }, 3000); // Show content after 3 seconds
+  });
+
+  

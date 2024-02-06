@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid 19 website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
 
     <!-- Import Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,20 +17,20 @@
 <body>
 
     <!-- Loading Section -->
-    <div class="preloading" id="pre-loading-animation" >
+    <section class="loading">
         <div class="icon-loading">
             <span class="loading-dot loading-dot-1st"></span>
             <span class="loading-dot loading-dot-2nd"></span>
             <span class="loading-dot loading-dot-3rd"></span>
             <span class="loading-dot loading-dot-4th"></span>
         </div>
-    </div>
+    </section>
 
     <!--Navigation Section-->
     <header>
         <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
 
-        <div id="menu" class="fas fa-bars"></div>
+        <div id="hamburger-menu" class="fas fa-bars"></div>
         <nav class=" navbar">
             <a href="..//homepage/index.html">Home</a>
             <a href="..//map/index.html">Map Cases</a>
@@ -41,19 +41,18 @@
         </nav>
     </header>
 
-    <!-- Self Assessment Container-->
-    <div class="asst-container">
+    <!-- Self Assessment Section-->
+    <section class="asst-container">
         <img src="images/assessment.png" alt="Assessment Icon">
         <h1>Covid 19 Self Assessment Quiz</h1>
         <p>Take this self-assessment to evaluate your risk of COVID-19 infection based on recent activities and symptoms.</p>
         <button id="startButton" class="btn" onclick="startAssessment()">Start</button>
         <div id="question"></div>
-        <div id="loading" style="display: none;">
+        <div id="loading-for-result" style="display: none;">
             <dotlottie-player src="https://lottie.host/efdb3d22-dad5-4b18-8ff2-041ef4179307/V4feVPc5wQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
         </div>
         <div id="result" style="display: none;"></div>
-        
-    </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
@@ -108,11 +107,9 @@
     <!-- Button for the user to scroll back to the top -->
     <button id="back-to-top-btn" onclick="scrollingTOP()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 
+    <!-- Link To JavaScript -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="script.js"></script>
+
 </body>
-
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="script.js"></script>
-
 </html>
