@@ -100,6 +100,7 @@ header .navbar a:hover {
 }
 
 
+/* Game title */
 .GameTitle {
     text-align: center; /* Center the text */
     font-size: 36px; /* Adjust the font size */
@@ -113,10 +114,11 @@ header .navbar a:hover {
 }
 
 .CarGame {
-    margin-top: 60px; /* Adjust as needed to create space between the header and game section */
+    margin-top: 60px; 
     padding: 20px;
 }
 
+/* car boxes*/
 .car{
     width: 100px;
     height: 150px;
@@ -138,6 +140,8 @@ header .navbar a:hover {
     border-left: 10px dashed white;
     border-right:10px dashed white;
 }
+
+/* lines */
 .lines{
     width: 10px;
     height: 100px;
@@ -145,6 +149,8 @@ header .navbar a:hover {
     position: absolute;
     margin-left: 195px;
 }
+
+/* covid objects */
 .other{
     width: 80px;
     height: 90px;
@@ -155,6 +161,7 @@ header .navbar a:hover {
     background-size: cover;   
 }
 
+/* Score */
 .Score{
     position: absolute;
     top: 300px;
@@ -169,19 +176,20 @@ header .navbar a:hover {
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
 }
 
+/* StartScreen - the one where you fail and click play again */
 .StartScreen {
     position: absolute;
     background-color: rgba(34, 119, 8, 0.952);
     color: white;
     z-index: 1;
-    top: 500px; /* Adjust as needed */
+    top: 500px; 
     left: 50%; /* Center the StartScreen horizontally */
     transform: translateX(-50%);
     text-align: center;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     font-size: 23px;
     width: 50%;
-    max-width: 400px; /* Limit the maximum width */
+    max-width: 400px;
     padding: 20px;
     border-radius: 23px;
 }
@@ -190,6 +198,7 @@ header .navbar a:hover {
     margin-bottom: 10px; /* Add some space between paragraphs */
 }
 
+/* StartScreen button */
 .StartScreen button {
     padding: 10px 20px; /* Adjust button padding */
     font-size: 18px; /* Adjust button font size */
@@ -201,6 +210,7 @@ header .navbar a:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* signal the user is hovering over it */
 .StartScreen button:hover {
     background-color: #222; /* Darken button on hover */
 }

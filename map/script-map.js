@@ -42,7 +42,3 @@ setTimeout(function() {
   }
 }, 4000); // show content after 4 seconds
 
-// for p in .widget-container
-document.getElementById(
-  'thisYear'
-).innerHTML = new Date().getFullYear();

@@ -65,6 +65,7 @@ function moveCar(car) {
     let other = document.querySelectorAll('.other');
     other.forEach(function (item) {
         //check if the player's car collides with any of the covid objects
+        
         if (isCollide(car, item)) {
             console.log('HIT');
             endGame();

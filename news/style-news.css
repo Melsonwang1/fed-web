@@ -12,7 +12,6 @@
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
-  transition: 0.3s ;
 }
 
 html {
@@ -112,6 +111,7 @@ main{
   padding-top: 150px;
 }
 
+/* h1 text */
 main h1{
   font-size: 45px;
   text-align: center;
@@ -128,12 +128,14 @@ main .source{
   padding-bottom: 100px;
 }
 
+/* ordered list */
 ol {
   list-style-type: none;
   width: 50vw;
   margin: 5em auto 1em;
 }
 
+/* for each news article */
 .card {
   width: 100%;
   display: grid;
@@ -142,33 +144,35 @@ ol {
   padding: 1.5em 0;
   border-bottom: 1px solid #ccc;
 }
-/* li:first-child > .card {
-  border-top: 1px solid #ccc;
-} */
 
+/* date styling for the date when the news was posted */
 .date {
   grid-area: date;
   color: #666;
   font-size: 0.8em;
 }
+/* content styling for the news article */
 .content {
   grid-area: content;
 }
+/* image styling for the news article */
 img {
   grid-area: image;
   margin-left: 3em;
   border-radius: 0.3em;
 }
-
+/* title styling */
 .super {
   font-size: 1em;
   color: #555;
   margin-bottom: 1em;
 }
+/* headline styling for the news article */
 .headline {
   margin-bottom: 0.5em;
   color: #222;
 }
+/*styling for the news article's author,words adn read time */
 .sub {
   font-size: 0.8em;
   color: #666;
@@ -280,7 +284,7 @@ footer .container .contact .contact-info li span {
 @media (max-width: 1200px) {
   /* Global Styles */
   html {
-    font-size: 54%;
+    font-size: 100%;
   }
 
   /* main */
@@ -315,8 +319,13 @@ footer .container .contact .contact-info li span {
   }
 
   /* main */
-  main h1{
-    font-size: 34px;
+  html{
+    font-size: 84%;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 2em;
   }
 
   ol {
@@ -383,6 +392,11 @@ footer .container .contact .contact-info li span {
       'date date image'
       'content content image';
     grid-template-columns: repeat(3, 1fr);
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 2em;
   }
 
   /* Footer */
