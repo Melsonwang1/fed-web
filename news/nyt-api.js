@@ -21,7 +21,7 @@ document.addEventListener("scroll", function () {
 
 // Hamburger Menu (for smaller view size)
 document.addEventListener("DOMContentLoaded", function() {
-  const menuIcon = document.getElementById("menu");
+  const menuIcon = document.getElementById("hamburger-menu");
   const navbar = document.querySelector("header .navbar");
 
   // Toggle navbar visibility when menu icon is clicked
@@ -33,15 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
  // Loading Animation
- document.addEventListener("DOMContentLoaded", function() {
-  // Hide preloader after 2-3 seconds
+ document.addEventListener('DOMContentLoaded', function() {
+  var loadings = document.getElementsByClassName('loading');
+
+  // use a For loop to loop through each element
+  for (var i = 0; i < loadings.length; i++) {
+      var preloading = loadings[i];
+      preloading.classList.toggle('active'); // to show or hide the animation
+  }
+
   setTimeout(function() {
-    document.getElementById("pre-loading-animation").style.display = "none";
-  }, 3000); 
+      for (var i = 0; i < loadings.length; i++) {
+          loadings[i].classList.toggle('active');
+      }
+  }, 3000); // Show content after 3 seconds
 });
-
-
-
 
 
 
