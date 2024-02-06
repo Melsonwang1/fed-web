@@ -25,7 +25,7 @@ section {
 
 .heading {
   text-align: center;
-  color: #3c6382; /* dark blue */
+  color: #3c6382; 
   font-size: 42px;
   font-weight: normal;
   padding: 16px;
@@ -42,8 +42,8 @@ section {
 .loading {
   background: #fff;
   position: fixed;
-  top: 80px; /* Adjust this value to position the loading animation below the header */
-  height: calc(100% - 80px); /* Adjust to fill remaining height */
+  top: 80px; 
+  height: calc(100% - 80px); 
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@ section {
   }
 }
     
-/* Header Section */
+/* Header */
 header {
   width: 100%;
   display: flex;
@@ -134,7 +134,7 @@ header .navbar a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px; /* Add padding to accommodate the fixed header */
+  padding-top: 100px; 
   padding-bottom: 30px;
 }
 
@@ -146,7 +146,7 @@ header .navbar a:hover {
 }
 
 #accordionExample {
-  width: 80%; /* Adjust the width as needed */
+  width: 80%; 
 }
 
 .accordion-item {
@@ -154,19 +154,19 @@ header .navbar a:hover {
 }
 
 .accordion-button {
-  font-size: 22px; /* Increase the font size of the accordion headers */
+  font-size: 22px; 
   padding: 25px;
   font-weight: 575;
 }
 
 .accordion-body {
-  font-size: 17px; /* Increase the font size of the accordion body text */
+  font-size: 17px; 
   padding: 30px;
 }
 
 /* Footer */
 footer {
-  background: url(Images/background.jpg);
+  background: url(../images/background.jpg);
   position: relative;
   width: 100%;
   height: auto;
@@ -278,18 +278,20 @@ footer .container .contact .contact-info li span {
 
 /* Smaller Size Views */
 @media (max-width: 1200px) {
+  /* Global Styles */
   html {
     font-size: 54%;
   }
 }
 
 @media (max-width: 991px) {
+  /* Global Styles */
   section {
     padding: 16px 4%;
     padding-top: 100px;
   }
 
-  /* Header Section */
+  /* Header */
   header .logo {
     font-size: 27px;
     color: #3c6382;
@@ -303,7 +305,6 @@ footer .container .contact .contact-info li span {
     color: #0a3d62; 
   }
   
-  /* Navigation Section */
   #hamburger-menu {
     display: none;
   }
@@ -331,7 +332,7 @@ footer .container .contact .contact-info li span {
 }
 
 @media (max-width: 768px) {
-  /* Header Section */
+  /* Header */
   header .navbar {
     position: absolute;
     top: 100%;
@@ -360,7 +361,6 @@ footer .container .contact .contact-info li span {
     padding: 18px;
   }
 
-  /* Navigation Section */
   #hamburger-menu {
     display: block; 
   }
@@ -375,11 +375,11 @@ footer .container .contact .contact-info li span {
   }
 
   .accordion-button {
-      font-size: 18px; /* Increase the font size of the accordion headers */
+      font-size: 18px; 
   }
 
   .accordion-body {
-      font-size: 14px; /* Increase the font size of the accordion body text */
+      font-size: 14px; 
   }
 
   /* Footer */

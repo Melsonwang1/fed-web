@@ -6,7 +6,7 @@
   <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
   <title>Covid 19 website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" type="text/css" /> <!-- Link To CSS -->
+  <link rel="stylesheet" href="style-news.css" type="text/css" /> <!-- Link To CSS -->
 
   <!-- Import Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,17 +24,18 @@
   </div>
 </div>
 
-<!-- Navigation Section -->
+<!-- Header -->
 <header>
-  <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID 19</a> <!--Covid Logo -->
+  <a href="../homepage/index.html" class="logo">C<span class="fas fa-virus" ></span>VID 19</a> <!--Covid Logo -->
 
+  <!-- Navigation -->
   <div id="hamburger-menu" class="fas fa-bars"></div>
   <nav class=" navbar">
       <a href="..//homepage/index.html">Home</a>
-      <a href="..//map/index.html">Map Cases</a>
+      <a href="..//map/map.html">Map Cases</a>
       <a href="..//news/news.html"class="active">News</a>
-      <a href="..//quiz/asst.html">Quiz</a>
-      <a href="..//game/game_1.html">Game</a>
+      <a href="..//quiz/quiz.html">Quiz</a>
+      <a href="..//game/game.html">Game</a>
       <a href="..//contact/contact.html">Contact Us</a>
   </nav>
 </header>
@@ -59,8 +60,10 @@
     <p class="source">&copy; <span id="thisYear"></span> API from New York Times</p>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
+      <!-- About Us -->
       <div class="ft aboutus">
           <h2>About Us</h2>
           <p>This website can provide details about Covid-19, and also aims to create awareness in you and have a better understanding
@@ -72,6 +75,7 @@
               <li><a href= "#"><i class="fab fa-youtube" style="color: #f02828;"></i></i></a></li>
           </ul>
       </div>
+      <!-- Links -->
       <div class="ft links">
           <h2>Support</h2>
           <ul>
@@ -85,13 +89,14 @@
           <h2>Links</h2>
           <ul>
               <li><a href="..//homepage/index.html">Home</a></li>
-              <li><a href="..//map/index.html">Map Cases</a></li>
+              <li><a href="..//map/map.html">Map Cases</a></li>
               <li><a href="../news/news.html">News</a></li>
-              <li><a href="..//quiz/asst.html">Quiz</a></li>
-              <li><a href="..//game/game_1.html">Game</a></li>
+              <li><a href="..//quiz/quiz.html">Quiz</a></li>
+              <li><a href="..//game/game.html">Game</a></li>
               <li><a href="..//contact/contact.html">Contact Us</a></li>
           </ul>
       </div>
+      <!-- Contact Info -->
       <div class="ft contact">
           <h2>Contact Us</h2>
           <ul class="contact-info">
@@ -117,7 +122,7 @@
       'thisYear'
     ).innerHTML = new Date().getFullYear();
   </script> <!-- For the API New York Times -->
-  <script src="nyt-api.js"></script>
+  <script src="script-news.js"></script>
 
 </body>
 </html>

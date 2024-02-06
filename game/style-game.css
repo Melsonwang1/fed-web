@@ -1,16 +1,8 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;        
-}
-
+/* Global Styles */
 *::selection {
     background-color: lightblue;
 }
-:root {
-    --blue: #3c6382;
-    --dark-blue: #0a3d62;
-}
+
 * {
     font-family: "poppins", sans-serif;
     margin: 0;
@@ -20,8 +12,11 @@
     outline: none;
     text-decoration: none;
 }
+
 html {
     font-size: 100%;
+    --blue: #3c6382;
+    --dark-blue: #0a3d62;
 }
 
 section {
@@ -30,21 +25,22 @@ section {
     padding-top: 100px;
 }
 
-#menu {
-    font-size: 3rem;
-    color: var(--blue);
+#hamburger-menu {
+    font-size: 25px;
+    color: #3c6382;
     cursor: pointer;
     display: none;
 }
-/* Header Section */
+
+/* Header */
 header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #fff;
-    position: absolute; /* Change this to 'absolute' or 'relative' if needed */
-    top: 0; /* Add this line to move the header to the top */
+    position: absolute; 
+    top: 0; 
     padding: 21px;
 }
   
@@ -58,17 +54,17 @@ header .navbar a {
     padding: 8px 20px;
     margin-left: 12px;
     border-radius: 10px;
-    color: #0a3d62; /* Dark Blue */
+    color: #0a3d62; 
 }
 
 header .navbar a:hover {
-    background: #3c6382; /* Blue */
+    background: #3c6382; 
     color: #fff;
 }
 
 header .navbar a.active,
 header .navbar a:hover {
-    background: var(--blue);
+    background: #3c6382;
     color: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -79,8 +75,6 @@ header .navbar a:hover {
     padding: 20px;
     transform: scale(0.8); 
 }
-
-
 
 /* Button Styles (auto scroll back to the top button) */
 #back-to-top-btn {
@@ -105,17 +99,6 @@ header .navbar a:hover {
     color: #fff;
 }
 
-/* Scrolling Animation */
-.scrolling-animation {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.6s;
-}
-
-.scrolling-animation.show {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .GameTitle {
     text-align: center; /* Center the text */
@@ -140,7 +123,7 @@ header .navbar a:hover {
     background-color: red;
     position: absolute;
     bottom: 120px;
-    background-image: url(Images/amb3.png);
+    background-image: url(../images/ambulance.png);
     background-size: cover;
 }
 
@@ -168,7 +151,7 @@ header .navbar a:hover {
     background-color: blue;
     position: absolute;
     bottom: 120px;
-    background-image: url(Images/covid.jpg);
+    background-image: url(../images/covid.jpg);
     background-size: cover;   
 }
 
@@ -225,7 +208,7 @@ header .navbar a:hover {
 
 /* Footer */
 footer {
-    background: url(..//homepage/images/background-img.jpg);
+    background: url(../images/background.jpg);
     position: relative;
     width: 100%;
     height: auto;
@@ -298,7 +281,10 @@ footer .container .contact .contact-info li {
 footer .container .contact .contact-info li span {
     font-size: 19px;
 }
+
+/* media queries */
 @media (max-width: 1200px) {
+    /* Global Styles */
     html {
       font-size: 50%;
     }
@@ -309,36 +295,29 @@ footer .container .contact .contact-info li span {
 }
 
 @media (max-width: 991px) {
+    /* Global Styles */
     section {
         padding: 16px 4%;
         padding-top: 100px;
     }
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        padding: 22px;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-        transform-origin: top;
-        transform: scaleY(0);
+    /* Header */
+    header .logo {
+      font-size: 27px;
+      color: #3c6382;
     }
-    
-    header .navbar.nav-toggle {
-        transform: scaleY(1);
-        opacity: 1;
-    }
-    
+  
     header .navbar a {
-        display: block;
-        margin: 14px;
-        font-size: 18px;
+      font-size: 19px;
+      padding: 4px 9px;
+      margin-left: 12px;
+      border-radius: 10px;
+      color: #0a3d62; 
     }
-    
-    #menu {
-        display: block;
+  
+    #hamburger-menu {
+      display: none;
     }
+
     .Score {
         width: 200px;
         font-size: 20px;
@@ -356,18 +335,41 @@ footer .container .contact .contact-info li span {
       
 }
 @media (max-width: 768px) {
-    .main{
-      background-size: 165vh;
-    }
-    
-    /* Header Section */
+    /* Header */
     header .navbar {
-      padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 22px;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: 0.3s; 
     }
-  
+
+    header .navbar.nav-toggle {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
     header .navbar a {
-      margin: 8px;
-      font-size: 16px;
+        display: block;
+        margin: 8px; 
+        font-size: 16px;
+    }
+
+    header .navbar {
+        padding: 18px;
+    }
+
+    #hamburger-menu {
+        display: block; 
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
     }
     .Score {
         width: 150px;
@@ -381,5 +383,4 @@ footer .container .contact .contact-info li span {
         grid-template-columns: (1,1fr);
         grid-gap: 40px;
     }
-  
 }

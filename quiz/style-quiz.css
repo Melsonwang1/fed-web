@@ -1,57 +1,35 @@
 /* Global Styles */
-*::selection {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
 * {
   font-family: "poppins", sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: none;
-  box-sizing: border-box;
-  outline: none;
   text-decoration: none;
-  transition: 0.3s ;
+  transition: 0.34s;
+  outline: none;
 }
 
 html {
-  font-size: 100%;
-  overflow-x: hidden;
   --blue: #3c6382;
   --dark-blue: #0a3d62;
-}
-
-h5, h6, p, li {
-  font-family: 'Lato', sans-serif;
+  font-size: 63%;
+  overflow-x: hidden;
 }
 
 section {
-  min-height: 100vh;
   padding: 16px 9%;
   padding-top: 100px;
+  min-height: 100vh;
 }
 
 #hamburger-menu {
   font-size: 25px;
+  display: none;
   color: #3c6382;
   cursor: pointer;
-  display: none;
 }
-
-.no-select {
-  /* prevent blue highlighting */
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  /* prevent text selection */
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  /* for chrome on android */
-  -webkit-tap-highlight-color: transparent;
-}
-
+  
 /* Loading Section */
 .loading {
   background: #fff;
@@ -105,16 +83,17 @@ section {
   }
 }
 
-/* Navigation Section */
+/* Header */
 header {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background: #fff;
-  position: fixed; 
-  top: 0; 
-  padding: 21px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 21px; 
 }
 
 header .logo {
@@ -125,8 +104,8 @@ header .logo {
 header .navbar a {
   font-size: 20px;
   padding: 8px 20px;
-  margin-left: 12px;
   border-radius: 10px;
+  margin-left: 12px;
   color: #0a3d62; 
 }
 
@@ -141,108 +120,127 @@ header .navbar a:hover {
   color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-
-
-/* main */
-main{
-  padding-top: 150px;
+  
+/* Self Assessment Section */
+.asst-container {
+  width: 1100px;
+  height: 600px;
+  margin: 150px auto 0; /* Adjust top margin to create space below the header */
+  padding: 20px;
+  background: url(../images/background.jpg);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-main h1{
-  font-size: 45px;
+.asst-container h1{
   text-align: center;
-  color: #3c6382;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 23px;
 }
 
-main a {
-  text-decoration: none;
-  color: #111;
-}
-
-main .source{
+.asst-container p{
   text-align: center;
-  padding-bottom: 100px;
-}
-
-ol {
-  list-style-type: none;
-  width: 50vw;
-  margin: 5em auto 1em;
-}
-
-.card {
-  width: 100%;
-  display: grid;
-  grid-template-areas: 'date content content image';
-  grid-template-columns: repeat(4, 1fr);
-  padding: 1.5em 0;
-  border-bottom: 1px solid #ccc;
-}
-/* li:first-child > .card {
-  border-top: 1px solid #ccc;
-} */
-
-.date {
-  grid-area: date;
-  color: #666;
-  font-size: 0.8em;
-}
-.content {
-  grid-area: content;
-}
-img {
-  grid-area: image;
-  margin-left: 3em;
-  border-radius: 0.3em;
-}
-
-.super {
-  font-size: 1em;
-  color: #555;
-  margin-bottom: 1em;
-}
-.headline {
-  margin-bottom: 0.5em;
-  color: #222;
-}
-.sub {
-  font-size: 0.8em;
-  color: #666;
-  margin-top: 2em;
-}
-
-
-/* Button Styles (auto scroll back to the top button) */
-#back-to-top-btn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
   font-size: 18px;
-  background-color: #fff;
-  color: #0a3d62;
-  border: 2px solid #0a3d62;
-  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.asst-container img {
+  width: 100px;
+  height: 100px;
+  display: block; 
+  margin: 0 auto; 
+}
+
+#question {
+  margin-bottom: 20px;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+} 
+
+#startButton {
+  display: block;
+  margin: 0 auto;
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
   cursor: pointer;
-  outline: none;
-  transition: 0.3s;
+  margin-top: 70px;
+}
+
+#startButton:hover{
+  background-color: #004692;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-yes {
+  margin-top:30px;
+  background-color: green;
+  color: white;
+}
+
+.btn-yes:hover{
+  background-color: darkgreen;
+}
+
+.btn-no {
+  margin-top:30px;
+  background-color: red;
+  color: white;
+}
+
+.btn-no:hover{
+  background-color: darkred;
 }
   
-  #back-to-top-btn:hover {
-  background-color: #0a3d62;
-  color: #fff;
+#loading-for-result {
+  text-align: center;
+  position: absolute; 
+  top: 97%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1;
 }
 
+#loading-for-result dotlottie-player {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; 
+}
+
+.result {
+  margin-top: 30px;
+  font-weight: bold;
+}
 
 /* Footer */
 footer {
-  background: url(../homepage/images/background.jpg);
+  background: url(../images/background.jpg);
   position: relative;
   width: 100%;
   height: auto;
   padding: 50px 80px;
+  margin-top: 180px;
 }
 
 footer .container {
@@ -312,23 +310,45 @@ footer .container .contact .contact-info li span {
   font-size: 19px;
 }
 
-/* media queries */
+/* Button Styles (auto scroll back to the top button) */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #0a3d62;
+  border: 2px solid #0a3d62;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+  
+#back-to-top-btn:hover {
+  background-color: #0a3d62;
+  color: #fff;
+}
+
+/* Smaller Size Views */
 @media (max-width: 1200px) {
+  /* Global Styles */
   html {
     font-size: 54%;
-  }
-  ol {
-    width: 80vw;
   }
 }
 
 @media (max-width: 991px) {
+  /* Global Styles */
   section {
     padding: 16px 4%;
     padding-top: 100px;
   }
 
-  /* Navigation Section */
+  /* Header */
   header .logo {
     font-size: 27px;
     color: #3c6382;
@@ -346,17 +366,67 @@ footer .container .contact .contact-info li span {
     display: none;
   }
 
-  main h1{
-    font-size: 34px;
+  /* Self Assessment Section */
+  .asst-container {
+    width: 96%;
+    max-width: 800px;
+    margin: 150px auto 0;
+    padding: 20px;
+    background: url(images/background-img.jpg);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  ol {
-    width: 90vw;
+  .asst-container h1 {
+    font-size: 24px;
+    padding-top: 20px;
   }
 
+  .asst-container p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .asst-container img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #question {
+    padding-top: 50px;
+    font-size: 24px;
+  }
+
+  #startButton {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 8px 16px;
+  } 
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: 20px;
+  }
+
+  .btn-yes,
+  .btn-no {
+    margin-top: 20px;
+  }
+
+  #loading {
+    margin-top: 20px;
+  } 
+
+  .result {
+    margin-top: 20px;
+  }
+  
+  /* Footer Section */
   footer{
     padding : 40px;
   }
+
   footer .container{
     width : 100%;
     display: grid;
@@ -366,16 +436,12 @@ footer .container .contact .contact-info li span {
 }
 
 @media (max-width: 768px) {
-  .main{
-    background-size: 165vh;
-  }
-  
-  /* Navigation Section */
+  /* Header */
   header .navbar {
     position: absolute;
     top: 100%;
-    width: 100%;
     left: 0;
+    width: 100%;
     background: #fff;
     padding: 22px;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -407,23 +473,16 @@ footer .container .contact .contact-info li span {
     transform: rotate(180deg);
   }
 
-  main h1{
-    font-size: 31px;
-  }
-
-  /* body*/
-  .card {
-    grid-template-areas:
-      'date date image'
-      'content content image';
-    grid-template-columns: repeat(3, 1fr);
+  /* Self Assessment Section */
+  .asst-container{
+    width: 639px;
   }
 
   /* Footer */
-  footer .container{
+  footer .container {
     width: 100%;
     display: grid;
-    grid-template-columns: (1,1fr);
+    grid-template-columns: repeat(1, 1fr); 
     grid-gap: 40px;
   }
 }

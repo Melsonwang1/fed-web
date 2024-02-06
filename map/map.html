@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <title>Covid 19 website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+  <title>Covid 19 website</title>
+  <link rel="stylesheet" href="style-map.css" type="text/css" /> <!-- Link To CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<header>
-    <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
-  
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class=" navbar">
-        <a href="..//homepage/index.html">Home</a>
-        <a href="..//map/index.html">Map Cases</a>
-        <a href="..//news/news.html">News</a>
-        <a href="..//quiz/asst.html">Quiz</a>
-        <a href="..//game/game_1.html" class="active">Game</a>
-        <a href="..//contact/contact.html">Contact Us</a>
-    </nav>
-  </header>
 
+<body> 
 
-<body>
-    <h1 class="GameTitle">Car Game</h1>
-    <div class="CarGame">
-        <div class="Score">
-
-        </div>
-        <div class="StartScreen">
-            <p>Start Game by clicking Here<br><br> Use the Arrow Keys to move<br><br>If you hit the virus you lose</p>
-            <button onclick="Reset()">PLAY GAME</button>
-        </div>
-        <div class="GameArea">
+    <!-- Loading Section -->
+    <div class="loading">
+        <div class="icon-loading">
+            <span class="loading-dot loading-dot-1st"></span>
+            <span class="loading-dot loading-dot-2nd"></span>
+            <span class="loading-dot loading-dot-3rd"></span>
+            <span class="loading-dot loading-dot-4th"></span>
         </div>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Header -->
+    <header>
+        <a href="../homepage/index.html" class="logo">C<span class="fas fa-virus" ></span>VID 19</a> <!--Covid Logo -->
+      
+        <!-- Navigation-->
+        <div id="hamburger-menu" class="fas fa-bars"></div>
+        <nav class=" navbar">
+            <a href="..//homepage/index.html">Home</a>
+            <a href="../map/map.html"class="active">Map Cases</a>
+            <a href="..//news/news.html">News</a>
+            <a href="..//quiz/quiz.html">Quiz</a>
+            <a href="..//game/game.html">Game</a>
+            <a href="../contact/contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="widget-container">
+        <h1> Real-Time Covid Map </h1>
+        <div class="elfsight-app-88ca6c4c-3ec3-4101-ac2d-4cb2e0735bc2"></div>
+    </div>
+      
+    <!-- Footer -->
     <footer>
         <div class="container">
+            <!-- About Us -->
             <div class="ft aboutus">
                 <h2>About Us</h2>
                 <p>This website can provide details about Covid-19, and also aims to create awareness in you and have a better understanding
@@ -54,6 +63,7 @@
                     <li><a href= "#"><i class="fab fa-youtube" style="color: #f02828;"></i></i></a></li>
                 </ul>
             </div>
+            <!-- Links -->
             <div class="ft links">
                 <h2>Support</h2>
                 <ul>
@@ -67,13 +77,14 @@
                 <h2>Links</h2>
                 <ul>
                     <li><a href="..//homepage/index.html">Home</a></li>
-                    <li><a href="..//map/index.html">Map Cases</a></li>
+                    <li><a href="..//map/map.html">Map Cases</a></li>
                     <li><a href="../news/news.html">News</a></li>
-                    <li><a href="..//quiz/asst.html">Quiz</a></li>
-                    <li><a href="..//game/game_1.html">Game</a></li>
+                    <li><a href="..//quiz/quiz.html">Quiz</a></li>
+                    <li><a href="..//game/game.html">Game</a></li>
                     <li><a href="..//contact/contact.html">Contact Us</a></li>
                 </ul>
             </div>
+            <!-- Contact Info -->
             <div class="ft contact">
                 <h2>Contact Us</h2>
                 <ul class="contact-info">
@@ -87,15 +98,15 @@
                     </li>
                 </ul>
             </div>
-        </div>
+          </div>
     </footer>
 
-    
     <!-- Button for the user to scroll back to the top -->
     <button id="back-to-top-btn" onclick="scrollingTOP()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-    <script src="script.js"></script>   
-    <link rel="stylesheet" href="style.css">    
+   
+    <!-- Link To JavaScript -->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="script-map.js"></script>
+        
 </body>
 </html>
-
-

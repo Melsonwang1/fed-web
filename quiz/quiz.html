@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid 19 website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="style-quiz.css"> <!-- Link to CSS -->
 
     <!-- Import Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,37 +26,39 @@
         </div>
     </section>
 
-    <!--Navigation Section-->
+    <!--Header-->
     <header>
-        <a href="#" class="logo">C<span class="fas fa-virus" ></span>VID-19</a> <!--Covid Logo -->
+        <a href="../homepage/index.html" class="logo">C<span class="fas fa-virus" ></span>VID 19</a> <!--Covid Logo -->
 
+        <!-- Navigation -->
         <div id="hamburger-menu" class="fas fa-bars"></div>
         <nav class=" navbar">
             <a href="..//homepage/index.html">Home</a>
-            <a href="..//map/index.html">Map Cases</a>
+            <a href="..//map/map.html">Map Cases</a>
             <a href="..//news/news.html">News</a>
-            <a href="..//quiz/asst.html" class="active">Quiz</a>
-            <a href="..//game/game_1.html">Game</a>
+            <a href="..//quiz/quiz.html" class="active">Quiz</a>
+            <a href="..//game/game.html">Game</a>
             <a href="..//contact/contact.html">Contact Us</a>
         </nav>
     </header>
 
     <!-- Self Assessment Section-->
     <section class="asst-container">
-        <img src="images/assessment.png" alt="Assessment Icon">
+        <img src="../images/assessment.png" alt="Assessment Icon">
         <h1>Covid 19 Self Assessment Quiz</h1>
         <p>Take this self-assessment to evaluate your risk of COVID-19 infection based on recent activities and symptoms.</p>
         <button id="startButton" class="btn" onclick="startAssessment()">Start</button>
-        <div id="question"></div>
-        <div id="loading-for-result" style="display: none;">
+        <div id="question"></div> <!-- Display the Questions -->
+        <div id="loading-for-result" style="display: none;"> <!-- Lottie Animation -->
             <dotlottie-player src="https://lottie.host/efdb3d22-dad5-4b18-8ff2-041ef4179307/V4feVPc5wQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
         </div>
-        <div id="result" style="display: none;"></div>
+        <div id="result" style="display: none;"></div> <!-- Display the result -->
     </section>
 
     <!-- Footer Section -->
     <footer>
         <div class="container">
+            <!-- About Us -->
             <div class="ft aboutus">
                 <h2>About Us</h2>
                 <p>This website can provide details about Covid-19, and also aims to create awareness in you and have a better understanding
@@ -68,6 +70,7 @@
                     <li><a href= "#"><i class="fab fa-youtube" style="color: #f02828;"></i></i></a></li>
                 </ul>
             </div>
+            <!-- Links -->
             <div class="ft links">
                 <h2>Support</h2>
                 <ul>
@@ -81,13 +84,14 @@
                 <h2>Links</h2>
                 <ul>
                     <li><a href="..//homepage/index.html">Home</a></li>
-                    <li><a href="..//map/index.html">Map Cases</a></li>
+                    <li><a href="..//map/map.html">Map Cases</a></li>
                     <li><a href="..//news/news.html">News</a></li>
-                    <li><a href="..//quiz/asst.html">Quiz</a></li>
-                    <li><a href="..//game/game_1.html">Game</a></li>
+                    <li><a href="..//quiz/quiz.html">Quiz</a></li>
+                    <li><a href="..//game/game.html">Game</a></li>
                     <li><a href="..//contact/contact.html">Contact Us</a></li>
                 </ul>
             </div>
+            <!-- Contact Info -->
             <div class="ft contact">
                 <h2>Contact Us</h2>
                 <ul class="contact-info">
@@ -109,7 +113,7 @@
 
     <!-- Link To JavaScript -->
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-    <script src="script.js"></script>
+    <script src="script-quiz.js"></script>
 
 </body>
 </html>

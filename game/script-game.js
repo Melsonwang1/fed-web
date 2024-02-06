@@ -171,7 +171,7 @@ function start() {
 
 // Hamburger Menu (for smaller view size)
   document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.getElementById("menu");
+    const menuIcon = document.getElementById("hamburger-menu");
     const navbar = document.querySelector("header .navbar");
   
     // Toggle navbar visibility when menu icon is clicked
