@@ -15,3 +15,13 @@ The website that we have created is a Covid website that aims to educate users o
 * We also implemented the news section where it will give you news from the new york times and showing the impacts of Covid-19 around the world. This will help the user be more alert on the ongoing situation
 * We also implemented the quiz where it will test on the users knowledge of what he learnt on the prevention as well as Covid 19 facts. This will help ensure that our website will impart some knowledge to the user after visiting our website.
 * The game page contains a game which the main idea is not to hit the viruses on the road. When the user remains in the game for a longer duration, their score will improve and continue to increase. This does not have any point implementation, as it is just a simple game which aims to educate the users to be more careful of covid-19. This game also enables the users to challenge themselves individually or compete with family and friends, making it engaging for all.
+
+
+## Citations ##
+New York Times API - (https://developer.nytimes.com/apis)
+elfsight - (https://elfsight.com/coronavirus-stats-widget/?utm_source=websites&utm_medium=clients&utm_content=coronavirus-stats&utm_term=%25website_domain%25&utm_campaign=free-widget)
+lottie (add link here)
+rest db - (add  link here)
+
+## Wireframe ##
+figma link - (https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untitled?type=design&mode=design&t=7Tocrue8L7pVg4Nn-0)
