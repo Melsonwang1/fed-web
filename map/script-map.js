@@ -32,22 +32,15 @@
     });
   });
 
-  // Loading Animation
-  document.addEventListener('DOMContentLoaded', function() {
-    var loadings = document.getElementsByClassName('loading');
+  // Loading Animation 
+setTimeout(function() {
+  var loadingElements = document.getElementsByClassName('loading');
 
-    // use a For loop to loop through each element
-    for (var i = 0; i < loadings.length; i++) {
-        var preloading = loadings[i];
-        preloading.classList.toggle('active'); // to show or hide the animation
-    }
-
-    setTimeout(function() {
-        for (var i = 0; i < loadings.length; i++) {
-            loadings[i].classList.toggle('active');
-        }
-    }, 3000); // Show content after 3 seconds
-  });
+  // Check if there are any elements
+  if (loadingElements.length > 0) {
+      loadingElements[0].style.display = 'none';
+  }
+}, 4000); // show content after 4 seconds
 
 // for p in .widget-container
 document.getElementById(
