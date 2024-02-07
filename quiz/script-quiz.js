@@ -34,34 +34,33 @@ let currentQuestionIndex = 0;
 
 // display the current question and options
 function displayQuestion() {
-    const questionDiv = document.getElementById("question");
+    const quesTion = document.getElementById("question");
     const currentQuestion = questions[currentQuestionIndex];
 
-    const optionsHTML = currentQuestion.options.map(option =>
+    const OPTions = currentQuestion.options.map(option =>
         `<button class="btn ${option === 'Yes' ? 'btn-yes' : 'btn-no'}" onclick="selectOption('${option}')">${option}</button>`
     ).join("");
 
-    questionDiv.innerHTML = `<p>${currentQuestion.question}</p>${optionsHTML}`;
+    quesTion.innerHTML = `<p>${currentQuestion.question}</p>${OPTions}`;
 }
 
 // questions will be shown only after the user click the start button
-function startAssessment() {
-    document.getElementById("startButton").style.display = "none";
+function quizToStart() {
+    document.getElementById("start_Button").style.display = "none";
     displayQuestion();
 }
 
 // handle the user selection of the options
 function selectOption(option) {
-    const results = document.getElementById("result");
     const loadingg = document.getElementById("loading-for-result");
     
-    results.innerHTML = "";
     questions[currentQuestionIndex].selectedOption = option;
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
         displayQuestion();
-    } else {
+    } 
+    else {
         loadingg.style.display = "block"; // Show loading animation
 
         setTimeout(() => {

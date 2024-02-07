@@ -123,7 +123,7 @@ header .navbar a:hover {
   font-weight: 400;
 } 
 
-#startButton {
+#start_Button {
   display: block;
   margin: 0 auto;
   background-color: #0056b3;
@@ -135,7 +135,7 @@ header .navbar a:hover {
   margin-top: 70px;
 }
 
-#startButton:hover{
+#start_Button:hover{
   background-color: #004692;
 }
 
@@ -194,6 +194,7 @@ header .navbar a:hover {
 .result {
   margin-top: 30px;
   font-weight: bold;
+  font-size: 24px;
 }
 
 /* Footer */
