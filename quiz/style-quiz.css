@@ -11,8 +11,6 @@
 }
 
 html {
-  --blue: #3c6382;
-  --dark-blue: #0a3d62;
   font-size: 63%;
   overflow-x: hidden;
 }
@@ -26,7 +24,7 @@ section {
 #hamburger-menu {
   font-size: 25px;
   display: none;
-  color: #3c6382;
+  color: #5d88ab;
   cursor: pointer;
 }
   
@@ -63,7 +61,7 @@ header {
 
 header .logo {
   font-size: 34px;
-  color: #3c6382;
+  color: #5d88ab;
 }
 
 header .navbar a {
@@ -71,17 +69,17 @@ header .navbar a {
   padding: 8px 20px;
   border-radius: 10px;
   margin-left: 12px;
-  color: #0a3d62; 
+  color: #486985; 
 }
 
 header .navbar a:hover {
-  background: #3c6382; 
+  background: #5d88ab; 
   color: #fff;
 }
 
 header .navbar a.active,
 header .navbar a:hover {
-  background: #3c6382;
+  background: #5d88ab;
   color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -223,7 +221,7 @@ footer .container .ft h2 {
 }
 
 footer .container .ft p {
-  color: #0a3d62;
+  color: #486985;
   font-size: 16px; 
 }
 
@@ -254,7 +252,7 @@ footer .container .links ul li {
 }
 
 footer .container .links ul li a {
-  color: #0a3d62;
+  color: #486985;
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
@@ -285,8 +283,8 @@ footer .container .contact .contact-info li span {
   height: 40px;
   font-size: 18px;
   background-color: #fff;
-  color: #0a3d62;
-  border: 2px solid #0a3d62;
+  color: #486985;
+  border: 2px solid #486985;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
@@ -294,7 +292,7 @@ footer .container .contact .contact-info li span {
 }
   
 #back-to-top-btn:hover {
-  background-color: #0a3d62;
+  background-color: #486985;
   color: #fff;
 }
 
@@ -316,7 +314,7 @@ footer .container .contact .contact-info li span {
   /* Header */
   header .logo {
     font-size: 27px;
-    color: #3c6382;
+    color: #5d88ab;
   }
   
   header .navbar a {
@@ -324,7 +322,7 @@ footer .container .contact .contact-info li span {
     padding: 4px 9px;
     margin-left: 12px;
     border-radius: 10px;
-    color: #0a3d62; 
+    color: #486985; 
   }
   
   #hamburger-menu {

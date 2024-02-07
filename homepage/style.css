@@ -11,8 +11,6 @@
 }
 
 html {
-  --blue: #3c6382;
-  --dark-blue: #0a3d62;
   font-size: 63%;
   overflow-x: hidden;
 }
@@ -67,8 +65,8 @@ header {
 }
 
 header .logo {
-  font-size: 34px;
-  color: #3c6382;
+  font-size: 38px;
+  color: #5d88ab;
 }
 
 header .navbar a {
@@ -76,45 +74,58 @@ header .navbar a {
   padding: 8px 20px;
   border-radius: 10px;
   margin-left: 12px;
-  color: #0a3d62; 
+  color: #5d88ab; 
 }
 
 header .navbar a:hover {
-  background: #3c6382; 
+  background: #5d88ab; 
   color: #fff;
 }
 
-header .navbar a.active,
-header .navbar a:hover {
-  background: #3c6382;
+header .navbar a.active{
+  background: #5d88ab;
   color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 /* Main Section */
 .main {
-  background: url(../images/grp\ mask.jpg);
-  background-position: center;
-  background-size: cover; 
+  background: url(../images/background.jpg);
+  min-height: 90vh;
+  background-size: auto 50%; 
 }
 
 .main .cta {
-  text-align: center;
-  padding-top: 31px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left; /* Align text to left */
+  padding-top: 100px; 
+}
+
+.main .cta .text-content {
+  flex-grow: 1; /* Grow to occupy remaining space */
+  padding-right: 20px; /* Adjust spacing between text and image */
 }
 
 .main .cta h1 {
   font-size: 48px;
   font-weight: bold;
-  color: #0a3d62;
+  color: #486985;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .main .cta h3 {
   font-size: 40px;
   font-weight: normal;
-  color: #3c6382;
+  color: #5d88ab;
   padding-bottom: 20px;
+}
+
+.main .cta img {
+  width: 450px;
+  height: 400px;
 }
 
 .main .cta .btn {
@@ -122,13 +133,14 @@ header .navbar a:hover {
   font-size: 17px;
   padding: 11px 23px;
   color: #fff;
-  background: #3c6382;
+  background: #5d88ab;
   border-radius: 16px;
   box-shadow: 0 8px 16px rgba(46, 46, 46, 0.1);
+  margin-bottom: 60px;
 }
 
 .main .cta .btn:hover { 
-  background: #0a3d62;
+  background: #486985;
 }
 
 /* Protection Section */
@@ -154,13 +166,13 @@ header .navbar a:hover {
 
 .protection .container .box h3 {
   font-size: 18px;
-  color: #3c6382;
+  color: #5d88ab;
 }
 
 .protection .container .box p {
   font-size: 14px;
   padding: 16px;
-  color: #0a3d62;
+  color: #486985;
 }
 
 .protection .container .box img {
@@ -176,7 +188,7 @@ header .navbar a:hover {
   background-position: center;
 }
 
-.symptoms .heading{
+.symptoms .heading {
   padding-top: 7px;
 }
 
@@ -186,31 +198,31 @@ header .navbar a:hover {
   justify-content: center;
 }
 
-.symptoms .column .main-image-symptoms img {
-  width: 37vh;
-}
-
-.symptoms .column .container {
-  display: flex;
+.symptoms .container {
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.symptoms .column .container .symptom-container {
-  margin: 16px; 
+.symptoms .row {
+  display: flex;
+  justify-content: center;
+}
+
+.symptoms .symptom-container {
+  margin: 33px;
   text-align: center;
 }
 
-.symptoms .column .container .symptom-container img {
-  width: 20rem;
+.symptoms .symptom-container img {
+  width: 150px; 
   padding: 17px;
 }
 
-.symptoms .column .container .symptom-container h3 {
+.symptoms .symptom-container h3 {
   font-size: 22px;
-  color: #3c6382;
+  color: #5d88ab;
 }
+
 
 /* Steps To Do Section */
 .steps-to-do .column {
@@ -244,7 +256,7 @@ header .navbar a:hover {
   padding: 10px; 
   text-align: center;
   font-size: 24px; 
-  background: #3c6382;
+  background: #5d88ab;
   color: #fff;
 }
 
@@ -268,7 +280,7 @@ header .navbar a:hover {
 
 .steps-to-do .column .container .box .steps-info p {
   font-size: 14px; 
-  color: #0a3d62;
+  color: #486985;
   padding: 8px 0; 
 }
 
@@ -296,7 +308,7 @@ footer .container .ft h2 {
 }
 
 footer .container .ft p {
-  color: #0a3d62;
+  color: #486985;
   font-size: 16px; 
 }
 
@@ -327,7 +339,7 @@ footer .container .links ul li {
 }
 
 footer .container .links ul li a {
-  color: #0a3d62;
+  color: #486985;
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
@@ -358,16 +370,16 @@ footer .container .contact .contact-info li span {
   height: 40px;
   font-size: 18px;
   background-color: #fff;
-  color: #0a3d62;
-  border: 2px solid #0a3d62;
+  color: #486985;
+  border: 2px solid #486985;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
   transition: 0.3s;
 }
   
-  #back-to-top-btn:hover {
-  background-color: #0a3d62;
+#back-to-top-btn:hover {
+  background-color: #486985;
   color: #fff;
 }
 
@@ -386,10 +398,14 @@ footer .container .contact .contact-info li span {
     padding-top: 100px;
   }
 
+  .heading{
+    font-size: 38px;
+  }
+
   /* Header */
   header .logo {
     font-size: 27px;
-    color: #3c6382;
+    color: #5d88ab;
   }
   
   header .navbar a {
@@ -397,7 +413,7 @@ footer .container .contact .contact-info li span {
     padding: 4px 9px;
     margin-left: 12px;
     border-radius: 10px;
-    color: #0a3d62; 
+    color: #5d88ab; 
   }
   
   #hamburger-menu {
@@ -405,32 +421,38 @@ footer .container .contact .contact-info li span {
   }
 
   /* Main Section */
+  .main{
+    min-height: 70vh;
+  }
+
   .main .cta{
     padding-top: 25px;
   }
 
   .main .cta h1{
-    font-size:40px;
+    font-size: 37px;
   }
 
   .main .cta h3{
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  .main .cta img{
+    width: 350px;
+    height: 290px;
   }
 
   /* Symptoms of COVID 19 Section */
-  .symptoms .column .main-image img {
-    width: 166px;
-    height: 128px;
+  .symptoms .column .container .symptom-container {
+    margin: 24px;
   }
-
   .symptoms .column .container .symptom-container img {
-    width: 175px;
-    padding: 14px;
+    width: 128px;
   }
   
   .symptoms .column .container .symptom-container h3 {
-    font-size: 18px;
-    color: #3c6382;
+    font-size: 17px;
+    color: #5d88ab;
   }
 
   /* Footer Section */
@@ -447,6 +469,10 @@ footer .container .contact .contact-info li span {
 }
 
 @media (max-width: 768px) {
+  .heading{
+    font-size: 33px;
+  }
+
   /* Header */
   header .navbar {
     position: absolute;
@@ -486,19 +512,28 @@ footer .container .contact .contact-info li span {
 
   /* Main Section */
   .main{
-    background-size: 165vh;
+    min-height: 65vh;
   }
-
+  
   .main .cta {
     padding-top: 20px;
   }
 
+  .main .cta .btn{
+    font-size: 14px;
+  }
+
+  .main .cta img{
+    width: 330px;
+    height: 270px;
+  }
+
   .main .cta h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .main .cta h3 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   /* Protection Section */
@@ -520,10 +555,6 @@ footer .container .contact .contact-info li span {
   }
 
   /* Symptoms of COVID 19 Section */
-  .symptoms .column .main-image-symptoms img {
-    width: 30vh;
-  }
-
   .symptoms .column .container .symptom-container {
     flex: 1 1 calc(50% - 32px); 
     margin: 8px;

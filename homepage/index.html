@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid 19 website</title>
+    <title>Covid 19 Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
 
@@ -22,7 +22,7 @@
     
     <!--Header-->
     <header>
-        <a href="index.html" class="logo">C<span class="fas fa-virus" ></span>VID 19</a> <!--Covid Logo -->
+        <a href="index.html" class="logo"><span class="fas fa-virus" ></span> COVID</a> <!--Covid Logo -->
 
         <!-- Navigation -->
         <div id="hamburger-menu" class="fas fa-bars"></div> <!-- Hamburger Menu Icon for smaller sizes-->
@@ -37,11 +37,14 @@
     </header>
 
     <!-- Main Section -->
-    <section class="main" >
+    <section class="main">
         <div class="cta">
-            <h1>Protect Yourself Against COVID 19</h1>
-            <h3>Keep Clean, Stay Healthy</h3>
-            <a href="../FAQ/faq.html" class="btn">Learn more about COVID 19</a>
+            <div class="text-content">
+                <h1>Protect Yourself Against <br> COVID 19</h1>
+                <h3>Keep Clean, Stay Healthy</h3>
+                <a href="../FAQ/faq.html" class="btn">Learn more about COVID 19</a>
+            </div>
+            <img src="../images/grp mask.jpg">
         </div>
     </section>
 
@@ -97,47 +100,53 @@
     <section class="symptoms">
         <h1 class="heading">Symptoms Of COVID 19</h1>
         <div class="column">
-            <div class="main-image-symptoms">
-                <img src="../images/main-symp-img.png" alt="Unwell Person Icon"> <!-- Main Image on the left-->
-            </div>
             <div class="container">
-                <!-- Cough Symptom -->
-                <div class="symptom-container">
-                    <img src="../images/cough.png" alt="Cough Icon">
-                    <h3>Cough</h3>
+                <!-- First Row -->
+                <div class="row">
+                    <!-- Cough Symptom -->
+                    <div class="symptom-container">
+                        <img src="../images/cough.png" alt="Cough Icon">
+                        <h3>Cough</h3>
+                    </div>
+    
+                    <!-- Sore Throat Symptom -->
+                    <div class="symptom-container">
+                      <img src="../images/sore-throat.png" alt="Sore Throat Icon">
+                      <h3>Sore Throat</h3>
+                   </div>
+    
+                   <!-- Headache Symptom -->
+                   <div class="symptom-container">
+                      <img src="../images/headache.png" alt="Headache Icon">
+                      <h3>Headache</h3>
+                   </div>
                 </div>
-
-                <!-- Sore Throat Symptom -->
-                <div class="symptom-container">
-                  <img src="../images/sore throat.png" alt="Sore Throat Icon">
-                  <h3>Sore Throat</h3>
-               </div>
-
-               <!-- Cold Symptom -->
-               <div class="symptom-container">
-                  <img src="../images/cold.png" alt="Cold Icon">
-                  <h3>Cold</h3>
-               </div>
-
-               <!-- Fever Symptom-->
-               <div class="symptom-container">
-                  <img src="../images/fever.png" alt="Fever Icon">
-                  <h3>Fever</h3>
-               </div>
-
-               <!-- Headache Symptom-->
-               <div class="symptom-container">
-                  <img src="../images/headache.png" alt="Headache Icon">
-                  <h3>Headache</h3>
-               </div>
-
-               <!-- Vomiting Symptom-->
-               <div class="symptom-container">
-                  <img src="../images/vomitting.png" alt="Vomit Icon">
-                  <h3>Vomiting</h3>
-               </div>
+    
+                <!-- Second Row -->
+                <div class="row">
+                   <!-- Fever Symptom-->
+                   <div class="symptom-container">
+                      <img src="../images/sick.png" alt="Fever Icon">
+                      <h3>Fever</h3>
+                   </div>
+    
+                   <!-- Fatigue Symptom-->
+                   <div class="symptom-container">
+                      <img src="../images/tiredness.png" alt="Fatigue Icon">
+                      <h3>Fatigue</h3>
+                   </div>
+    
+                   <!-- Difficulty Breathing Symptom-->
+                   <div class="symptom-container">
+                      <img src="../images/difficulty-breathing.png" alt="Difficulty Breathing Icon">
+                      <h3>Difficulty <br> Breathing</h3>
+                   </div>
+                </div>
             </div>
+        </div>
     </section>
+
+
 
     <!-- Steps To Do If Infected with COVID 19 Section -->
     <section class="steps-to-do" >
