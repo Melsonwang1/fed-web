@@ -1,3 +1,4 @@
+// some of the code for the contact form part is from Week 12 FED Tutorial
 // send data from the contact form to restdb
 document.addEventListener("DOMContentLoaded", function () {
     const APIKEY = "65be42a8459ebb29dd283fad"; // API KEY
