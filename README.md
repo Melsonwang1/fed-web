@@ -9,7 +9,7 @@ We have created a Covid website that aims to educate users on the Covid-19 pande
 
 * As a user who wants to keep updated of the latest global news, I would like a website which collate news from all around the world so that I am able to access these news easily.
 
-* As a user who values both education and entertainment, I would like a website which have a game to not only engage the users, but also raise awareness in them regarding Covid 19
+* As a user who values both education and entertainment, I would like a website which have a game to not only engage the users, but also raise awareness in them regarding Covid 19.
 
 * As a user who are concerned about their risk of getting covid, I would like a website equipped with a self testing tool to know the possibilty of the covid status, whether is it positive or negative.
 
@@ -28,11 +28,11 @@ Wireframe - [Figma Link](https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untit
 
 - Interactive Map - allows users to view Covid-19 cases, fatalities and recoveries in the country they are interested in by hovering their mouse over it.
 
-- News - allow the users to stay informed of the trends and updates regarding the Covid 19 pandemic worldwide. They can see the worldwide news in just 1 single page.
+- News - allow the users to stay informed of the updated trends and updates regarding the Covid 19 pandemic worldwide. They can see the worldwide news in just 1 single page.
 
 - Quiz - allow the users to evalulate their symptoms and potential exposure to Covid 19. They can also know their risk of catching the virus.
 
-- Game - allow the users to stay engaged and also have more awareness of the virus.
+- Game - allow the users to stay engaged and also enhance awareness and vigilance towards the virus.
 
 - Contact Form - allow the users to submit any enquries or feedback they may have.
 
@@ -55,15 +55,6 @@ Wireframe - [Figma Link](https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untit
 
 - [Google Fonts](https://fonts.google.com/)
 
-## Testing ##
-
-1. Contact Form:
-    1. Go to the "Contact Us" Page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with an invalid Singapore phone number and verify that a relevant error message appears
-    5. Try to submit the form with all inputs valid and verify that a success message appears.
-
 
 ## Credits
 
@@ -73,7 +64,7 @@ Wireframe - [Figma Link](https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untit
 - [MOH Singapore](https://www.moh.gov.sg/covid-19)
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos/icons used in this site were obtained from ...
 - https://www.vecteezy.com/vector-art/6758661-boy-with-modern-hairstyle-in-medical-mask-children-s-avatar-during-covid-19-coronavirus-pandemic
 - https://icon-icons.com/icon/button-avoid-touching-face-stop-preventive-measure-coronavirus/143120
 - https://icon-icons.com/icon/Wash-hands/134853
@@ -96,12 +87,14 @@ Wireframe - [Figma Link](https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untit
 - https://insights.blackcoffer.com/impact-of-covid-19-coronavirus-on-the-indian-economy-3/ (Background)
 
 
-- The Animations used in this site were obtained from ...
-- https://app.lottiefiles.com/animation/0102e148-c7b4-4217-a024-d65bc509ba03?panel=embed
-- https://app.lottiefiles.com/animation/924db221-a6d2-4bb0-8c7d-a3da78dc7a62?panel=embed
-- https://app.lottiefiles.com/animation/0a182fa8-1b67-4956-add7-1279c2536f19?panel=embed
-- https://app.lottiefiles.com/animation/ed8fec18-7ff3-478b-8499-7e4b40cc4261?channel=web&source=public-animation&panel=embed
+## Animations
+- Lottie Animations were used from https://lottiefiles.com/
 
 
 ## Others ##
 [RestDB] (https://contactus-ed6c.restdb.io/)
+
+
+## Contributions ##
+Zheng Bin - did the homepage, faq, quiz, contact us
+Melson - did the map cases, news, game
