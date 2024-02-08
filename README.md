@@ -2,7 +2,7 @@
 ## Covid website ##
 We have created a Covid website that aims to educate users on the Covid-19 pandemic so that they know how to protect themselves and their loved ones from the virus. Additionally, if they are planning to travel, they can check the number of Covid-19 cases in that country that they are planning to travel to. This will help them make the decision whether to go to that country. There would also be global news on the Covid situation of the world.
 
-- [GitHub Link](https://github.com/Melsonwang1/fed-web)
+- [Our GitHub Link](https://github.com/Melsonwang1/fed-web)
 
 ## Design Process ##
 * As a user who plans to travel overseas, I would like a website where I can conveniently check the number of Covid-19 cases for the country that I am travelling to so as to know the covid situation in that country. Based on the covid cases in the country I am travelling to, I am able to evalulate my choice of whether to travel or to cancel my trip.
