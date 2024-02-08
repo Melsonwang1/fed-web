@@ -100,5 +100,5 @@ Wireframe - [Figma Link](https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untit
 
 
 ## Contributions ##
-Zheng Bin - did the homepage, faq, quiz, contact us
-Melson - did the map cases, news, game
+- Zheng Bin - did the homepage, faq, quiz, contact us
+- Melson - did the map cases, news, game
