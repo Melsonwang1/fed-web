@@ -95,7 +95,8 @@ Wireframe - [Figma Link](https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untit
 
 
 ## Others ##
-[RestDB] (https://contactus-ed6c.restdb.io/)
+- [RestDB] (https://contactus-ed6c.restdb.io/)
+- FED Week 12 Tutorial
 
 
 ## Contributions ##
