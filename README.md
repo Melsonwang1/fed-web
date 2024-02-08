@@ -70,6 +70,7 @@ Wireframe - [Figma Link](https://www.figma.com/file/uP742CyXEWaIts85JKE9mM/Untit
 - https://www.vecteezy.com/vector-art/6758661-boy-with-modern-hairstyle-in-medical-mask-children-s-avatar-during-covid-19-coronavirus-pandemic
 - https://icon-icons.com/icon/button-avoid-touching-face-stop-preventive-measure-coronavirus/143120
 - https://icon-icons.com/icon/Wash-hands/134853
+- https://www.fhi.no/en/id/corona/coronavirus/novel-coronavirus-facts-advice/facts-and-knowledge-about-covid-19/facts-about-novel-coronavirus/?term=
 - https://www.flaticon.com/free-icon/social-distancing_2949694
 - https://www.flaticon.com/free-icon/vaccination_5576924?term=vaccine&page=1&position=66&origin=tag&related_id=5576924
 - https://www.flaticon.com/free-icon/people-together_4596136
